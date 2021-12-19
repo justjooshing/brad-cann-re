@@ -13,7 +13,7 @@ const config = {
 		vite: {
 			resolve: {
 				alias: {
-					$assets: path.resolve('./assets')
+					$assets: path.resolve('./static/assets')
 				}
 			}
 		},

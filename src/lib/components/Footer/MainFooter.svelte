@@ -7,7 +7,7 @@
 
 <div class="main-footer">
 	<!-- Contact -->
-  <h3>Contact info</h3>
+	<h3>Contact info</h3>
 	{#each contactDetails as [key, value]}
 		<p>{capitaliseFirstLetter(key)}: <a href={links[key]}>{value}</a></p>
 	{/each}
@@ -19,17 +19,17 @@
 <style lang="scss">
 	@import '../../global/index.scss';
 	.main-footer {
-    padding: 0 1em;
+		padding: 0 1em;
 		background-color: $bg-tertiary;
-    color: $text-secondary;
-    a {
-      color: $text-secondary;
-      text-decoration: none;
-      @include color-fade;
+		color: $text-secondary;
+		a {
+			color: $text-secondary;
+			text-decoration: none;
+			@include color-fade;
 
-     &:hover {
-        color: $text-secondary-hover;
-      }
-    }
+			&:hover {
+				color: $text-secondary-hover;
+			}
+		}
 	}
 </style>

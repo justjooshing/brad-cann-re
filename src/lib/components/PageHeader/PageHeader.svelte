@@ -8,12 +8,6 @@
 		href: page === 'home' ? '/' : `/${page}`,
 		text: page.toUpperCase()
 	}));
-
-	const contactLinks = [
-		{
-			href: 'tel:0438833354'
-		}
-	];
 </script>
 
 <div class="pageHeader">
