@@ -2,8 +2,6 @@
 	import logo from '$assets/logo.jpg';
 	import Icon from '../icons/index.svelte';
 
-	const capitaliseFirstLetter = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
-
 	const pages = ['home', 'contact', 'about'];
 
 	const pageLinks = pages.map((page) => ({
@@ -19,9 +17,7 @@
 </script>
 
 <div class="pageHeader">
-	<div class="logo">
-		<img src={logo} alt="logo" />
-	</div>
+	<img class="logo" src={logo} alt="logo" />
 	<div class="links">
 		<div class="nav">
 			{#each pageLinks as { href, text }}
@@ -36,35 +32,48 @@
 </div>
 
 <style lang="scss">
-	@import '../../global/styles.scss';
+	@import '../../global/index.scss';
 
 	.pageHeader {
-		padding: 0 1em;
+		display: flex;
+		place-content: space-between;
+		width: 100%;
 		background-color: $bg-tertiary;
 		color: $text-secondary;
-		place-content: space-between;
-		display: flex;
 
 		.logo {
-			margin: 1em 0;
+			padding: 0 1em;
+			margin: 0.5em 0;
+			height: 60px;
+
+			@include small {
+				height: 80px;
+			}
 		}
 
 		.links {
-			display: flex;
+			padding: 0 1em;
+			display: none;
 			flex-direction: column;
 			justify-content: space-around;
 			margin: 0.5em 0;
+
+			@include small {
+				display: flex;
+			}
 
 			.icons {
 				display: flex;
 				place-content: space-around;
 			}
+
 			.nav {
 				display: flex;
 				&_link {
 					color: $text-secondary;
 					text-decoration: none;
 					margin: 5px;
+					@include color-fade;
 
 					&:hover {
 						color: $text-secondary-hover;
