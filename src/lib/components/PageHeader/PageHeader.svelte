@@ -1,13 +1,7 @@
 <script lang="ts">
 	import logo from '$assets/logo.jpg';
+	import { headerLinks } from '$lib/contants';
 	import Icon from '../icons/index.svelte';
-
-	const pages = ['contact', 'about'];
-
-	const pageLinks = pages.map((page) => ({
-		href: page === 'home' ? '/' : `/${page}`,
-		text: page.toUpperCase()
-	}));
 </script>
 
 <div class="pageHeader">
@@ -17,7 +11,7 @@
 	<div class="links">
 		<div class="nav">
 			<Icon icon="home" />
-			{#each pageLinks as { href, text }}
+			{#each headerLinks as { href, text }}
 				<a class="nav_link" {href}>{text}</a>
 			{/each}
 		</div>

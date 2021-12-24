@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { links } from '$lib/contants';
+	import { contactLinks as links } from '$lib/contants';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
 	import phone from 'svelte-awesome/icons/phone';
 	import facebookF from 'svelte-awesome/icons/facebook-f';
@@ -8,14 +8,16 @@
 	type iconTypes = 'phone' | 'facebook' | 'home';
 	export let icon: iconTypes;
 
-	const { data, href } = {
+	const { data, href, target, rel } = {
 		phone: {
 			data: phone,
 			href: links.phone
 		},
 		facebook: {
 			data: facebookF,
-			href: links.facebook
+			href: links.facebook,
+			target: '_blank',
+			rel: 'noopener noreferrer'
 		},
 		home: {
 			data: home,
@@ -24,7 +26,7 @@
 	}[icon];
 </script>
 
-<a {href} class="icon">
+<a {href} {rel} {target} class="icon">
 	<Icon {data} scale={1.1} />
 </a>
 
