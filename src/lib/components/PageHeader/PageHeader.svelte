@@ -1,6 +1,6 @@
 <script lang="ts">
 	import logo from '$assets/logo.jpg';
-	import { headerLinks } from '$lib/contants';
+	import { headerLinks } from '$lib/contants/index.svelte';
 	import Icon from '../icons/index.svelte';
 </script>
 

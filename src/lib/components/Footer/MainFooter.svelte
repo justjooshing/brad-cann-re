@@ -1,5 +1,11 @@
 <script lang="ts">
-	import { contact, contactLinks as links, openDays, openHours, siteLinks } from '$lib/contants';
+	import {
+		contact,
+		contactLinks as links,
+		openDays,
+		openHours,
+		siteLinks
+	} from '$lib/contants/index.svelte';
 	import { capitaliseFirstLetter } from '$lib/helpers';
 
 	const contactDetails = Object.entries(contact);

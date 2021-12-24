@@ -1,43 +1,46 @@
 <script lang="ts">
-	import { contactLinks as links } from '$lib/contants';
+	import { getIcon, iconTypes } from '$lib/contants/index.svelte';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import phone from 'svelte-awesome/icons/phone';
-	import facebookF from 'svelte-awesome/icons/facebook-f';
-	import home from 'svelte-awesome/icons/home';
-	import envelope from 'svelte-awesome/icons/envelope-o';
+	import { createPopperActions } from 'svelte-popperjs';
+	import { capitaliseFirstLetter } from '$lib/helpers';
 
-	type iconTypes = 'phone' | 'facebook' | 'home' | 'email';
+	const [popperRef, popperContent] = createPopperActions();
+	const popperOptions = {
+		placement: 'top',
+		modifiers: [{ name: 'offset', options: { offset: [0, 10] } }]
+	};
+
 	export let icon: iconTypes;
-	export let alt: boolean = false;
+	export let alt = false;
 
-	const { data, href, target, rel, aria } = {
-		phone: {
-			data: phone,
-			href: links.phone,
-			aria: 'phone'
-		},
-		facebook: {
-			data: facebookF,
-			href: links.facebook,
-			target: '_blank',
-			rel: 'noopener noreferrer',
-			aria: 'facebook'
-		},
-		home: {
-			data: home,
-			href: '/',
-			aria: 'home'
-		},
-		email: {
-			data: envelope,
-			href: links.email,
-			aria: 'email'
+	const { data, href, target, rel, aria } = getIcon(icon);
+	let showTooltip = false;
+
+	const updateTooltipState = () => {
+		if (alt) {
+			showTooltip = !showTooltip;
 		}
-	}[icon];
+	};
 </script>
 
-<a {href} {rel} {target} class="icon" class:alt aria-describedby={aria}>
+<a
+	{href}
+	{rel}
+	{target}
+	class="icon"
+	class:alt
+	aria-describedby={aria}
+	use:popperRef
+	on:mouseenter={updateTooltipState}
+	on:mouseleave={updateTooltipState}
+>
 	<Icon {data} scale={1.1} />
+	{#if showTooltip}
+		<div id="tooltip" use:popperContent={popperOptions}>
+			{capitaliseFirstLetter(aria)}
+			<div id="arrow" data-popper-arrow />
+		</div>
+	{/if}
 </a>
 
 <style lang="scss">
