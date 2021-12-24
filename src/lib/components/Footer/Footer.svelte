@@ -1,5 +1,5 @@
 <script>
-	import CopywrightFooter from './CopywrightFooter.svelte';
+	import CopywrightFooter from './CopyrightFooter.svelte';
 
 	import MainFooter from './MainFooter.svelte';
 </script>
