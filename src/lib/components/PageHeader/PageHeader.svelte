@@ -2,7 +2,7 @@
 	import logo from '$assets/logo.jpg';
 	import Icon from '../icons/index.svelte';
 
-	const pages = ['home', 'contact', 'about'];
+	const pages = ['contact', 'about'];
 
 	const pageLinks = pages.map((page) => ({
 		href: page === 'home' ? '/' : `/${page}`,
@@ -11,9 +11,12 @@
 </script>
 
 <div class="pageHeader">
-	<img class="logo" src={logo} alt="logo" />
+	<a href="/">
+		<img class="logo" src={logo} alt="logo" />
+	</a>
 	<div class="links">
 		<div class="nav">
+			<Icon icon="home" />
 			{#each pageLinks as { href, text }}
 				<a class="nav_link" {href}>{text}</a>
 			{/each}
@@ -62,11 +65,15 @@
 			}
 
 			.nav {
-				display: flex;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 20px;
+				width: min-content;
+				place-items: center;
+
 				&_link {
 					color: $text-secondary;
 					text-decoration: none;
-					margin: 5px;
 					@include color-fade;
 
 					&:hover {
