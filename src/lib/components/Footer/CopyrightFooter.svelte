@@ -1,5 +1,5 @@
 <script>
-	import Icon from '../icons/index.svelte';
+	import Icon from '../Icon/index.svelte';
 </script>
 
 <div class="copyright">

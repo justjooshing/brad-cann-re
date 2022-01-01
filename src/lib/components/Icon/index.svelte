@@ -3,10 +3,11 @@
 	import Icon from 'svelte-awesome/components/Icon.svelte';
 	import { createPopperActions } from 'svelte-popperjs';
 	import { capitaliseFirstLetter } from '$lib/helpers';
+	import type { Placement } from '@popperjs/core';
 
 	const [popperRef, popperContent] = createPopperActions();
 	const popperOptions = {
-		placement: 'top',
+		placement: 'top' as Placement,
 		modifiers: [{ name: 'offset', options: { offset: [0, 10] } }]
 	};
 

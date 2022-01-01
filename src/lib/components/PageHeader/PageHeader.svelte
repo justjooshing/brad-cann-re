@@ -1,10 +1,10 @@
 <script lang="ts">
 	import logo from '$assets/logo.jpg';
 	import { headerLinks } from '$lib/contants/index.svelte';
-	import Icon from '../icons/index.svelte';
+	import Icon from '../Icon/index.svelte';
 </script>
 
-<div class="pageHeader">
+<nav class="pageHeader">
 	<a href="/">
 		<img class="logo" src={logo} alt="logo" />
 	</a>
@@ -20,7 +20,7 @@
 			<Icon icon="phone" />
 		</div>
 	</div>
-</div>
+</nav>
 
 <style lang="scss">
 	@import '../../global/index.scss';
