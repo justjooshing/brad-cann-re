@@ -1,18 +1,19 @@
 <script>
 	import Footer from '$lib/components/Footer/Footer.svelte';
 	import PageHeader from '$lib/components/PageHeader/PageHeader.svelte';
+	import { title } from '$lib/stores/store';
 </script>
 
-<PageHeader />
+<svelte:head>
+	<title>{$title}</title>
+</svelte:head>
 
-<!-- Page Children -->
+<PageHeader />
 <div class="wrapper">
 	<slot />
 </div>
-
 <Footer />
 
-<!-- CopywrightFooter -->
 <style lang="scss">
 	:global(body) {
 		padding: 0;
