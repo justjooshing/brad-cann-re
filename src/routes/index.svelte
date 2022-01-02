@@ -12,8 +12,6 @@
 	title.clear();
 </script>
 
-<h3>index page</h3>
-
 <AppraisalsBanner />
 <HelpingYou />
 <FutureIsHere />

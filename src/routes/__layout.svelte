@@ -20,7 +20,6 @@
 		margin: 0;
 	}
 	.wrapper {
-		padding: 0em 1em;
 		min-height: 100vh;
 	}
 </style>
