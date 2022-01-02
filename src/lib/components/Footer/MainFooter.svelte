@@ -49,7 +49,7 @@
 		a {
 			color: $text-secondary;
 			text-decoration: none;
-			@include color-fade;
+			@include fade(color);
 
 			&:hover {
 				color: $text-secondary-hover;

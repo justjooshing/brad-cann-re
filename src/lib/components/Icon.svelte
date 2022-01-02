@@ -56,7 +56,7 @@
 	}
 
 	.fade {
-		@include color-fade;
+		@include fade(color);
 		&:hover {
 			color: $text-secondary-hover;
 		}
