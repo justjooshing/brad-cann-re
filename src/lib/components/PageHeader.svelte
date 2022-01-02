@@ -1,7 +1,7 @@
 <script lang="ts">
 	import logo from '$assets/logo.jpg';
 	import { headerLinks } from '$lib/contants/index.svelte';
-	import Icon from '../Icon/index.svelte';
+	import Icon from './Icon.svelte';
 </script>
 
 <nav class="pageHeader">
@@ -10,20 +10,20 @@
 	</a>
 	<div class="links">
 		<div class="nav">
-			<Icon icon="home" />
+			<Icon icon="home" fade />
 			{#each headerLinks as { href, text }}
 				<a class="nav_link" {href}>{text}</a>
 			{/each}
 		</div>
 		<div class="icons">
-			<Icon icon="facebook" />
-			<Icon icon="phone" />
+			<Icon icon="facebook" fade />
+			<Icon icon="phone" fade />
 		</div>
 	</div>
 </nav>
 
 <style lang="scss">
-	@import '../../global/index.scss';
+	@import '../global/index.scss';
 
 	.pageHeader {
 		display: flex;

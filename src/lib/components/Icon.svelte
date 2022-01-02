@@ -13,6 +13,7 @@
 
 	export let icon: iconTypes;
 	export let alt = false;
+	export let fade = false;
 
 	const { data, href, target, rel, aria } = getIcon(icon);
 	let showTooltip = false;
@@ -30,6 +31,7 @@
 	{target}
 	class="icon"
 	class:alt
+	class:fade
 	aria-describedby={aria}
 	use:popperRef
 	on:mouseenter={updateTooltipState}
@@ -45,18 +47,21 @@
 </a>
 
 <style lang="scss">
-	@import '../../global/index.scss';
+	@import '../global/index.scss';
 
 	.icon {
 		display: flex;
 		color: $text-secondary;
-		@include color-fade;
+		cursor: pointer;
+	}
 
+	.fade {
+		@include color-fade;
 		&:hover {
-			cursor: pointer;
 			color: $text-secondary-hover;
 		}
 	}
+
 	.alt {
 		&:hover {
 			transition: none;
