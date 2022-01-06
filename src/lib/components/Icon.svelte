@@ -12,14 +12,15 @@
 	};
 
 	export let icon: iconTypes;
-	export let alt = false;
+	export let tooltip = false;
 	export let fade = false;
+	export let alt = false;
 
 	const { data, href, target, rel, aria } = getIcon(icon);
 	let showTooltip = false;
 
 	const updateTooltipState = () => {
-		if (alt) {
+		if (tooltip) {
 			showTooltip = !showTooltip;
 		}
 	};
@@ -30,8 +31,9 @@
 	{rel}
 	{target}
 	class="icon"
-	class:alt
+	class:tooltip
 	class:fade
+	class:alt
 	aria-describedby={aria}
 	use:popperRef
 	on:mouseenter={updateTooltipState}
@@ -55,6 +57,10 @@
 		cursor: pointer;
 	}
 
+	.alt {
+		color: $button-text;
+	}
+
 	.fade {
 		@include fade(color);
 		&:hover {
@@ -62,7 +68,7 @@
 		}
 	}
 
-	.alt {
+	.tooltip {
 		&:hover {
 			transition: none;
 			color: $text-secondary;

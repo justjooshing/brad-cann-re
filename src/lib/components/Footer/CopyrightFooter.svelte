@@ -5,9 +5,9 @@
 <div class="copyright">
 	<span class="copy"> Copyright 2021 | Brad Cann and Partners | All Rights Reserved </span>
 	<span class="links">
-		<Icon alt icon="facebook" />
-		<Icon alt icon="phone" />
-		<Icon alt icon="email" />
+		<Icon tooltip icon="facebook" />
+		<Icon tooltip icon="phone" />
+		<Icon tooltip icon="email" />
 	</span>
 </div>
 
