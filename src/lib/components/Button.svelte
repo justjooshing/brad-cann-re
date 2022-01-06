@@ -17,13 +17,11 @@
 
 	.button {
 		font-size: $text-small;
-		padding: 13px 29px;
-		margin: 1em;
-		margin-left: 0em;
+		padding: 15px 15px;
 		border-radius: 3px;
 		cursor: pointer;
 		text-shadow: none;
-		width: max-content;
+		text-align: center;
 		background-color: $button;
 		@include fade(background-color);
 		&:hover {

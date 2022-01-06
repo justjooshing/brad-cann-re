@@ -1,12 +1,13 @@
 <script>
 	import chelsea_pier from '$assets/chelsea_pier.webp';
 	import Button from './Button.svelte';
+	import ContentWrap from './ContentWrap.svelte';
 	import Htag from './Htag.svelte';
 </script>
 
 <div class="appraisals_wrapper">
 	<img src={chelsea_pier} alt="chelsea beach pier" />
-	<div class="bg">
+	<ContentWrap>
 		<div class="content">
 			<Htag size={1} style={1} message="Work with someone you can trust" />
 			<Htag
@@ -20,7 +21,7 @@
 				<Button href="/rentals">RENTAL APPRAISAL</Button>
 			</div>
 		</div>
-	</div>
+	</ContentWrap>
 </div>
 
 <style lang="scss">
@@ -32,31 +33,22 @@
 		flex-direction: row;
 		img {
 			width: 50%;
-			// height: 100px;
 			object-position: 20% 33%;
 			object-fit: cover;
 		}
 
-		.bg {
-			// position: absolute;
-			top: 0;
-			height: 100%;
-			width: 100%;
+		.content {
+			display: flex;
+			flex-direction: column;
+			color: $text-secondary;
+			text-shadow: 1px 1px 3px black;
 
-			.content {
-				margin: 1em;
-				margin-top: 60px;
-				padding: 1em;
-				border-radius: 3px;
-				max-width: 60%;
-				display: flex;
-				flex-direction: column;
-				color: $text-secondary;
-				text-shadow: 1px 1px 3px black;
-
-				.buttons {
-					display: flex;
-					width: max-content;
+			.buttons {
+				display: grid;
+				grid-gap: 5px;
+				grid-template-rows: 1fr 1fr;
+				@include medium {
+					grid-template-columns: 1fr 1fr;
 				}
 			}
 		}
