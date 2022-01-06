@@ -1,9 +1,10 @@
 <script lang="ts">
 	export let href: string = undefined;
 	export let onclick: (val?: unknown) => void = undefined;
+	export let lrg = false;
 </script>
 
-<div class="button">
+<div class="button" class:lrg>
 	{#if href}
 		<a {href}><slot /></a>
 	{:else}
@@ -13,14 +14,16 @@
 
 <style lang="scss">
 	@import '../global/index.scss';
+
 	.button {
+		font-size: $text-small;
 		padding: 13px 29px;
 		margin: 1em;
 		margin-left: 0em;
 		border-radius: 3px;
 		cursor: pointer;
 		text-shadow: none;
-		color: $button-text;
+		width: max-content;
 		background-color: $button;
 		@include fade(background-color);
 		&:hover {
@@ -29,6 +32,7 @@
 
 		button,
 		a {
+			color: $button-text;
 			border: none;
 			font-weight: bold;
 			text-decoration: none;
@@ -37,5 +41,8 @@
 				color: $button-text;
 			}
 		}
+	}
+	.lrg {
+		font-size: $text-large;
 	}
 </style>
