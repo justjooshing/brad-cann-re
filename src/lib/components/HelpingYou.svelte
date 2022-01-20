@@ -50,7 +50,8 @@
 			width: 100%;
 		}
 		p {
-			color: #74746a;
+			line-height: 1.8em;
+			color: $text-primary;
 		}
 		span {
 			font-size: $text-standard;

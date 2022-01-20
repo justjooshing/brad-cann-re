@@ -1,19 +1,22 @@
-$dark-grey: #1e1e1e;
-$white: #fff;
+$grey-dark: #1e1e1e;
+$grey-mid: #74746a;
 $grey: #f6f6f6;
+$white: #fff;
 $yellow: #fff04a;
 $yellow-bright: #f2de00;
 $blue: #2d649a;
 $blue-dark: #21416a;
 
-$text-primary: $dark-grey;
+$text-primary: $grey-mid;
 $text-secondary: $white;
 $text-secondary-hover: $yellow;
+
+$header-primary: $grey-dark;
 
 $bg-primary: $white;
 $bg-secondary: $grey;
 $bg-tertiary: $blue;
-$copyright-footer-bg: $dark-grey;
+$copyright-footer-bg: $grey-dark;
 
 $button: $yellow;
 $button-text: $blue-dark;
