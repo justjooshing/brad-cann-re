@@ -4,12 +4,15 @@
 	import ContentWrap from './ContentWrap.svelte';
 	import Htag from './Htag.svelte';
 	import Icon from './Icon.svelte';
+	import UnderlineBar from './UnderlineBar.svelte';
+	import image from '$assets/helping-you.webp';
 </script>
 
 <div class="wrapper">
-	<img src="" alt="people" />
+	<img class="image" src={image} alt="two people in suits" />
 	<ContentWrap>
 		<Htag centered size={1} style={2} message="Helping you is our passion" />
+		<UnderlineBar />
 		<p>Navigating all areas of the real estate world can be challenging at the best of times.</p>
 		<p>
 			Whether your trying to find your first home, selling your current property, curious what your
@@ -38,21 +41,25 @@
 
 	.wrapper {
 		display: grid;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: auto 1fr;
 		@include medium {
 			grid-template-columns: 1fr 1fr;
 		}
-	}
-	p {
-		color: #74746a;
-	}
-	span {
-		font-size: $text-standard;
-		margin-left: 15px;
-	}
-	.button {
-		display: flex;
-		place-content: center;
-		place-items: center;
+
+		.image {
+			width: 100%;
+		}
+		p {
+			color: #74746a;
+		}
+		span {
+			font-size: $text-standard;
+			margin-left: 15px;
+		}
+		.button {
+			display: flex;
+			place-content: center;
+			place-items: center;
+		}
 	}
 </style>

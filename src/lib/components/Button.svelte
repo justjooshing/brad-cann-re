@@ -4,17 +4,23 @@
 	export let lrg = false;
 </script>
 
-<div class="button" class:lrg>
-	{#if href}
-		<a {href}><slot /></a>
-	{:else}
-		<button {onclick}><slot /></button>
-	{/if}
+<div class="wrapper">
+	<div class="button" class:lrg>
+		{#if href}
+			<a {href}><slot /></a>
+		{:else}
+			<button {onclick}><slot /></button>
+		{/if}
+	</div>
 </div>
 
 <style lang="scss">
 	@import '../global/index.scss';
 
+	.wrapper {
+		display: flex;
+		place-content: center;
+	}
 	.button {
 		font-size: $text-small;
 		padding: 15px 15px;
