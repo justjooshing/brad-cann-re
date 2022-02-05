@@ -39,6 +39,7 @@
 	}
 
 	p {
+		text-align: center;
 		line-height: 1.8em;
 		color: $text-primary;
 	}
