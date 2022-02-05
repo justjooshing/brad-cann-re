@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { contact, contactLinks } from '$lib/contants/index.svelte';
+	import { contact, contactLinks } from '$lib/constants/index.svelte';
 	import Button from './Button.svelte';
 	import ContentWrap from './ContentWrap.svelte';
 	import Htag from './Htag.svelte';

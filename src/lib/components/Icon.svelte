@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getIcon, iconTypes } from '$lib/contants/index.svelte';
+	import { getIcon, iconTypes } from '$lib/constants/index.svelte';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
 	import { createPopperActions } from 'svelte-popperjs';
 	import { capitaliseFirstLetter } from '$lib/helpers';

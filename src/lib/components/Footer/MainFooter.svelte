@@ -5,7 +5,7 @@
 		openDays,
 		openHours,
 		siteLinks
-	} from '$lib/contants/index.svelte';
+	} from '$lib/constants/index.svelte';
 	import { capitaliseFirstLetter } from '$lib/helpers';
 
 	const contactDetails = Object.entries(contact);

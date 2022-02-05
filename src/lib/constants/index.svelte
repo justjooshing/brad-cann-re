@@ -41,6 +41,18 @@
 		text: page
 	}));
 
+	interface siteLinksObject {
+		[key: string]: string;
+	}
+
+	export const siteLinksObj = siteLinks.reduce(
+		(links, link) => ({
+			...links,
+			[link.text]: link.href
+		}),
+		{} as siteLinksObject
+	);
+
 	export const headerLinks = headerPages.map((page) => ({
 		href: `/${page}`,
 		text: page.toUpperCase()
