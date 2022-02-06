@@ -5,8 +5,8 @@
 	import { contactLinks } from '$lib/constants/index.svelte';
 </script>
 
-	<div class="wrapper">
-		<div class="content">
+<div class="wrapper">
+	<div class="content">
 		<div>
 			<Htag size={1} style={2} message="Would you like to speak to an expert?" />
 			<p>Discover your property's true potential</p>
@@ -22,14 +22,14 @@
 
 <style lang="scss">
 	@import '../global/index.scss';
-	
+
 	.wrapper {
 		background-image: url('$assets/contact-us.webp');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		display: flex;
-		
+
 		.content {
 			width: 100%;
 			color: $text-secondary;
@@ -38,7 +38,7 @@
 			display: flex;
 			flex-direction: column;
 			place-content: space-around;
-			
+
 			@include medium {
 				flex-direction: row;
 			}

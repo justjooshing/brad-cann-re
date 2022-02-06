@@ -1,7 +1,7 @@
 <script>
 	import Icon from '../Icon.svelte';
 
-	const currentYear = new Date().getFullYear()
+	const currentYear = new Date().getFullYear();
 </script>
 
 <div class="copyright">
