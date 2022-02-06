@@ -15,9 +15,11 @@
 	export let tooltip = false;
 	export let fade = false;
 	export let alt = false;
+	export let scale = 1.1;
 
 	const { data, href, target, rel, aria } = getIcon(icon);
 	let showTooltip = false;
+	const pointer = href;
 
 	const updateTooltipState = () => {
 		if (tooltip) {
@@ -34,12 +36,13 @@
 	class:tooltip
 	class:fade
 	class:alt
+	class:pointer
 	aria-describedby={aria}
 	use:popperRef
 	on:mouseenter={updateTooltipState}
 	on:mouseleave={updateTooltipState}
 >
-	<Icon {data} scale={1.1} />
+	<Icon {data} {scale} />
 	{#if showTooltip}
 		<div id="tooltip" use:popperContent={popperOptions}>
 			{capitaliseFirstLetter(aria)}
@@ -54,6 +57,9 @@
 	.icon {
 		display: flex;
 		color: $text-secondary;
+	}
+
+	.pointer {
 		cursor: pointer;
 	}
 

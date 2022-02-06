@@ -3,6 +3,12 @@
 	import facebookF from 'svelte-awesome/icons/facebook-f';
 	import home from 'svelte-awesome/icons/home';
 	import envelope from 'svelte-awesome/icons/envelope-o';
+	import users from 'svelte-awesome/icons/users';
+	import star from 'svelte-awesome/icons/star';
+	import trophy from 'svelte-awesome/icons/trophy';
+	import tie from 'svelte-awesome/icons/black-tie';
+	import dollar from 'svelte-awesome/icons/dollar';
+	import results from 'svelte-awesome/icons/signal';
 
 	export const contact = {
 		phone: '0438833354',
@@ -58,10 +64,30 @@
 		text: page.toUpperCase()
 	}));
 
-	export type iconTypes = 'phone' | 'facebook' | 'home' | 'email';
+	export type iconTypes =
+		| 'phone'
+		| 'facebook'
+		| 'home'
+		| 'email'
+		| 'users'
+		| 'results'
+		| 'star'
+		| 'trophy'
+		| 'tie'
+		| 'dollar';
 
 	interface getIconTypes {
-		data: typeof phone | typeof facebookF | typeof home | typeof envelope;
+		data:
+			| typeof phone
+			| typeof facebookF
+			| typeof home
+			| typeof envelope
+			| typeof users
+			| typeof star
+			| typeof trophy
+			| typeof tie
+			| typeof dollar
+			| typeof results;
 		href: string;
 		aria: string;
 		target?: string;
@@ -90,6 +116,36 @@
 			email: {
 				data: envelope,
 				href: contactLinks.email,
+				aria: 'email'
+			},
+			users: {
+				data: users,
+				href: null,
+				aria: 'email'
+			},
+			results: {
+				data: results,
+				href: null,
+				aria: 'email'
+			},
+			star: {
+				data: star,
+				href: null,
+				aria: 'email'
+			},
+			trophy: {
+				data: trophy,
+				href: null,
+				aria: 'email'
+			},
+			tie: {
+				data: tie,
+				href: null,
+				aria: 'email'
+			},
+			dollar: {
+				data: dollar,
+				href: null,
 				aria: 'email'
 			}
 		}[icon]);
