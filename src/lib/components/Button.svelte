@@ -20,6 +20,7 @@
 	.wrapper {
 		display: flex;
 		place-content: center;
+		place-items: center;
 	}
 	.button {
 		font-size: $text-small;
