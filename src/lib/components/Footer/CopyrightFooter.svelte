@@ -1,9 +1,11 @@
 <script>
 	import Icon from '../Icon.svelte';
+
+	const currentYear = new Date().getFullYear()
 </script>
 
 <div class="copyright">
-	<span class="copy"> Copyright 2021 | Brad Cann and Partners | All Rights Reserved </span>
+	<span class="copy"> Copyright {currentYear} | Brad Cann and Partners | All Rights Reserved </span>
 	<span class="links">
 		<Icon tooltip icon="facebook" />
 		<Icon tooltip icon="phone" />
