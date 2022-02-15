@@ -5,7 +5,7 @@ const titleStore = () => {
 
 	return {
 		subscribe,
-		set: (val) => {
+		set: (val: string) => {
 			set(`${val} - Brad Cann and Partners - Chelsea`);
 		},
 		clear: () => {

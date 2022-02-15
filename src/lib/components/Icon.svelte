@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { getIcon, iconTypes } from '$lib/constants/index.svelte';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
 	import { createPopperActions } from 'svelte-popperjs';
-	import { capitaliseFirstLetter } from '$lib/helpers';
 	import type { Placement } from '@popperjs/core';
+
+	import { getIcon, iconTypes } from '$lib/constants/index.svelte';
+	import { capitaliseFirstLetter } from '$lib/helpers';
 
 	const [popperRef, popperContent] = createPopperActions();
 	const popperOptions = {

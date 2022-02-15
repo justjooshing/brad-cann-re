@@ -18,7 +18,9 @@
 		</div>
 		<img {src} alt={title} />
 	</a>
-	<Htag size={3} style={4} message={title} />
+	<a {href}>
+		<Htag size={3} style={4} message={title} />
+	</a>
 </div>
 
 <style lang="scss">
@@ -62,6 +64,11 @@
 			img {
 				width: 100%;
 			}
+		}
+
+		a {
+			text-decoration: none;
+			color: unset;
 		}
 	}
 </style>

@@ -45,11 +45,13 @@
 			<p>
 				Brad Cann started as a sales person in 1993 and quickly rose to being a top sales person for
 				a leading franchise group. During this time Brad was exposed to the Jenman Sales System and
-				was impressed by its emphasis of ethics and client care. The dream to open an office with
-				these principles at its core became a reality in 2001 when Brad opened his office and
-				quickly became the number one office both in the franchise group he belonged to and achieved
-				excellent results the Chelsea area and surrounds, priding itself in ethics training & client
-				care.
+				was impressed by its emphasis of ethics and client care.
+			</p>
+			<p>
+				The dream to open an office with these principles at its core became a reality in 2001 when
+				Brad opened his office and quickly became the number one office both in the franchise group
+				he belonged to and achieved excellent results the Chelsea area and surrounds, priding itself
+				in ethics training & client care.
 			</p>
 		</div>
 
@@ -71,6 +73,7 @@
 		display: grid;
 		padding: 20px 0;
 		grid-template-rows: repeat(2, 1fr);
+		text-align: center;
 		@include medium {
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: auto;

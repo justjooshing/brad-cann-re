@@ -37,6 +37,10 @@
 
 <style lang="scss">
 	@import '../global/index.scss';
+
+	p {
+		text-align: center;
+	}
 	.articles {
 		display: grid;
 		grid-template-rows: repeat(3, auto);
