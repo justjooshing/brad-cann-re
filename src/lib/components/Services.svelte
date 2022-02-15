@@ -59,7 +59,7 @@
 
 	.text {
 		p {
-			line-height: 1.8em;
+			line-height: 1.5em;
 			color: $text-primary;
 			text-align: center;
 		}

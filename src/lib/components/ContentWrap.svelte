@@ -1,6 +1,6 @@
-<div class="padding">
+<section class="padding">
 	<slot />
-</div>
+</section>
 
 <style>
 	.padding {

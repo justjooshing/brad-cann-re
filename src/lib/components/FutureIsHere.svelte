@@ -27,11 +27,6 @@
 	<img class="image" src={image} alt="Five people in suits" />
 </div>
 
-<!-- 
-	The future is here
-		Text
-		5 people image
--->
 <style lang="scss">
 	@import '../global/index.scss';
 	.image {
@@ -40,7 +35,7 @@
 
 	p {
 		text-align: center;
-		line-height: 1.8em;
+		line-height: 1.5em;
 		color: $text-primary;
 	}
 </style>

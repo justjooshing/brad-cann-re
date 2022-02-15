@@ -71,12 +71,15 @@
 
 	.wrapper {
 		display: grid;
-		padding: 20px 0;
+		padding-top: 20px;
 		grid-template-rows: repeat(2, 1fr);
 		text-align: center;
 		@include medium {
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: auto;
+		}
+		p {
+			line-height: 1.5;
 		}
 
 		.attributes {

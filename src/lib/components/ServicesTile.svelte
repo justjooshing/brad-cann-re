@@ -31,7 +31,9 @@
 		text-align: center;
 		place-content: space-between;
 		color: $text-primary;
-
+		p {
+			line-height: 1.5;
+		}
 		.image {
 			overflow: hidden;
 

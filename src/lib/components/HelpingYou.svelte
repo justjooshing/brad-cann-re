@@ -50,7 +50,7 @@
 			width: 100%;
 		}
 		p {
-			line-height: 1.8em;
+			line-height: 1.5em;
 			color: $text-primary;
 		}
 		span {
