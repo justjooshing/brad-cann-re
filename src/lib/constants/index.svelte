@@ -9,6 +9,7 @@
 	import tie from 'svelte-awesome/icons/black-tie';
 	import dollar from 'svelte-awesome/icons/dollar';
 	import results from 'svelte-awesome/icons/signal';
+	import link from 'svelte-awesome/icons/link';
 
 	export const contact = {
 		phone: '0438833354',
@@ -74,7 +75,8 @@
 		| 'star'
 		| 'trophy'
 		| 'tie'
-		| 'dollar';
+		| 'dollar'
+		| 'link';
 
 	interface getIconTypes {
 		data:
@@ -87,7 +89,8 @@
 			| typeof trophy
 			| typeof tie
 			| typeof dollar
-			| typeof results;
+			| typeof results
+			| typeof link;
 		href: string;
 		aria: string;
 		target?: string;
@@ -147,6 +150,11 @@
 				data: dollar,
 				href: null,
 				aria: 'email'
+			},
+			link: {
+				data: link,
+				href: null,
+				aria: 'link'
 			}
 		}[icon]);
 </script>
