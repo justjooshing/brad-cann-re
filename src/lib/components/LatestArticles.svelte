@@ -47,6 +47,7 @@
 
 		@include medium {
 			grid-gap: 20px;
+			grid-template-rows: auto;
 			grid-template-columns: repeat(3, 1fr);
 		}
 	}

@@ -7,7 +7,7 @@
 
 <div class="wrapper">
 	<div class="content">
-		<div>
+		<div class="text">
 			<Htag size={1} style={2} message="Would you like to speak to an expert?" />
 			<p>Discover your property's true potential</p>
 		</div>
@@ -42,6 +42,11 @@
 			@include medium {
 				flex-direction: row;
 			}
+
+			.text {
+				margin: 0 0.5em;
+			}
+
 			.button {
 				display: flex;
 				place-items: center;

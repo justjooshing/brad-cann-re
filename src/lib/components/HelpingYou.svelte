@@ -5,11 +5,13 @@
 	import Htag from './Htag.svelte';
 	import Icon from './Icon.svelte';
 	import UnderlineBar from './UnderlineBar.svelte';
-	import image from '$assets/helping-you.webp';
+	import image from '$assets/brad_profile.webp';
 </script>
 
 <div class="wrapper">
-	<img class="image" src={image} alt="two people in suits" />
+	<ContentWrap>
+		<img class="image" src={image} alt="Brad" />
+	</ContentWrap>
 	<ContentWrap>
 		<Htag centered size={1} style={2} message="Helping you is our passion" />
 		<UnderlineBar />
@@ -42,8 +44,10 @@
 	.wrapper {
 		display: grid;
 		grid-template-rows: auto 1fr;
+		place-items: center;
 		@include medium {
 			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
 		}
 
 		.image {
