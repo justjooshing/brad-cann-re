@@ -1,6 +1,4 @@
 <script>
-	// your script goes here
-
 	import ContentWrap from './ContentWrap.svelte';
 	import Htag from './Htag.svelte';
 	import UnderlineBar from './UnderlineBar.svelte';

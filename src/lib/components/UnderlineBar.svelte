@@ -1,7 +1,3 @@
-<script>
-	// your script goes here
-</script>
-
 <div class="wrapper">
 	<div class="underline-bar" />
 </div>
