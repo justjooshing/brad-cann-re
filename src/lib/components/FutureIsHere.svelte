@@ -21,8 +21,8 @@
 			for the first time ever create a passive income to enhance agents earnings for today and
 			retirement income for the future.
 		</p>
+		<img class="image" src={image} alt="Five people in suits" />
 	</ContentWrap>
-	<img class="image" src={image} alt="Five people in suits" />
 </div>
 
 <style lang="scss">

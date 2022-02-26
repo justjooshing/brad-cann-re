@@ -35,7 +35,7 @@
 		font-weight: normal;
 		font-size: $heading-3;
 		@include medium {
-			font-size: $heading-3;
+			font-size: $heading-2;
 		}
 	}
 	.style-3 {

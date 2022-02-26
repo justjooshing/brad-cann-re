@@ -10,14 +10,16 @@
 	<div class="testimonial">
 		<img src={testimonialImage} alt="Guy with thumb up" />
 		<div>
-			<Htag size={1} style={2} message="Thank you for helping us" />
-			<p class="testimonial-message">
+			<div class='content'>
+				<Htag size={1} style={2} message="Thank you for helping us" />
+				<p class="testimonial-message">
 				“Brad, We would like to send our gratitude for assisting us in purchasing our first home. We
 				were new to this and it made things a lot easier when we had a real estate agent helping us
 				along the way. We appreciate the advise and will be happy to deal with you in the future.”
 			</p>
 			<p class="testimonial-name">Preston Shaw - Dennis and Elysia Costelloe</p>
 			<p class="testimonial-role">Property Buyer</p>
+		</div>
 			<Button {href}>Click here for more client testimonials</Button>
 		</div>
 	</div>
@@ -38,6 +40,10 @@
 		@include medium {
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: auto;
+		}
+
+		.content {
+			padding-bottom: 1em;
 		}
 
 		&-message {
