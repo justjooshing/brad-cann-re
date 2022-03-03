@@ -13,13 +13,13 @@
 </script>
 
 <AppraisalsBanner />
-<HelpingYou />
+<HelpingYou altBg />
 <FutureIsHere />
-<Services />
+<Services altBg />
 <ContactBanner />
-<WhyBrad />
+<WhyBrad altBg />
 <LatestArticles />
-<Testimonials />
+<Testimonials altBg />
 
 <style>
 	/* your styles go here */

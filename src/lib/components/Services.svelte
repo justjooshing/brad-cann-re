@@ -9,6 +9,8 @@
 	import imgPropMan from '$assets/property_management.webp';
 	import { siteLinksObj } from '$lib/constants/index.svelte';
 
+	export let altBg = false;
+
 	const copy = {
 		sellers: {
 			heading: 'Sellers',
@@ -39,7 +41,7 @@
 	const copyArray = Object.values(copy);
 </script>
 
-<ContentWrap>
+<ContentWrap {altBg}>
 	<div class="text">
 		<Htag size={2} style={2} message="What we can do for you" centered />
 		<UnderlineBar />

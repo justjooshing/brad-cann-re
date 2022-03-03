@@ -3,10 +3,12 @@
 	import Htag from './Htag.svelte';
 	import UnderlineBar from './UnderlineBar.svelte';
 	import image from '$assets/future-is-here.webp';
+
+	export let altBg = false;
 </script>
 
 <div class="wrapper">
-	<ContentWrap>
+	<ContentWrap {altBg}>
 		<Htag size={1} style={2} message="The future is here!" centered />
 		<UnderlineBar />
 		<p>

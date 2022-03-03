@@ -3,10 +3,13 @@
 	import ContentWrap from './ContentWrap.svelte';
 	import Htag from './Htag.svelte';
 	import testimonialImage from '$assets/testimonials.webp';
+
+	export let altBg = false;
+
 	const href = '/testimonials';
 </script>
 
-<ContentWrap>
+<ContentWrap {altBg}>
 	<div class="testimonial">
 		<img src={testimonialImage} alt="Guy with thumb up" />
 		<div>

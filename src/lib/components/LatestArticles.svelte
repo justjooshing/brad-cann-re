@@ -8,6 +8,8 @@
 	import sellingTips from '$assets/selling-tips.webp';
 	import howToBuy from '$assets/how-to-buy.webp';
 
+	export let altBg = false;
+
 	const articles = [
 		{
 			title: '12 mistakes to avoid when selling your home',
@@ -24,7 +26,7 @@
 	];
 </script>
 
-<ContentWrap>
+<ContentWrap {altBg}>
 	<Htag style={2} size={1} centered message="Our latest articles" />
 	<UnderlineBar />
 	<p>See the latest real estate news, articles, and blogs</p>

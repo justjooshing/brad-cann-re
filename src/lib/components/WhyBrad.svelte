@@ -5,6 +5,8 @@
 	import UnderlineBar from './UnderlineBar.svelte';
 	import type { iconTypes } from '$lib/constants/index.svelte';
 
+	export let altBg = false;
+
 	interface teamAttributeTypes {
 		icon: iconTypes;
 		text: string;
@@ -37,7 +39,7 @@
 	];
 </script>
 
-<ContentWrap>
+<ContentWrap {altBg}>
 	<div class="wrapper">
 		<div>
 			<Htag size={1} style={2} message="Why choose Brad Cann and Partners?" />
