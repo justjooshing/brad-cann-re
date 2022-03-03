@@ -8,7 +8,7 @@
 <div class="wrapper">
 	<div class="content">
 		<div class="text">
-			<Htag size={1} style={2} message="Would you like to speak to an expert?" />
+			<Htag alt size={1} style={2} message="Would you like to speak to an expert?" />
 			<p>Discover your property's true potential</p>
 		</div>
 		<Button href={contactLinks.phone}>
