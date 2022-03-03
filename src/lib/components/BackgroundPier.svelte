@@ -10,11 +10,11 @@
 		padding: 8em 0;
 		width: 100%;
 		background: url('$assets/chelsea_pier.webp') transparent no-repeat;
-		background-size: contain;
+		background-size: cover;
 
 		@include medium {
+			padding: 12em 0;
 			background-attachment: fixed;
-			background-size: cover;
 		}
 	}
 </style>
