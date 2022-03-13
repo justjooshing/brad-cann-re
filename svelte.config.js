@@ -16,9 +16,7 @@ const config = {
 					$assets: path.resolve('./static/assets')
 				}
 			}
-		},
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		}
 	}
 };
 
