@@ -54,7 +54,6 @@
 
 <style lang="scss">
 	@import '../../global/index.scss';
-
 	.icon {
 		display: flex;
 		color: $text-secondary;
@@ -63,15 +62,18 @@
 	.pointer {
 		cursor: pointer;
 	}
-
-	.alt {
-		color: $button-text;
-	}
-
 	.fade {
 		@include fade(color);
 		&:hover {
 			color: $text-secondary-hover;
+		}
+	}
+
+	.alt {
+		color: $button-text;
+		@include fade(color);
+		&:hover {
+			color: $button-hover-alt;
 		}
 	}
 
