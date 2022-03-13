@@ -11,6 +11,7 @@
 		width: 100%;
 		background: url('$assets/chelsea_pier.webp') transparent no-repeat;
 		background-size: cover;
+		background-position: right;
 
 		@include medium {
 			padding: 12em 0;
