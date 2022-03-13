@@ -33,7 +33,6 @@
 		flex-direction: column;
 		text-align: center;
 		color: $text-primary;
-		// text-shadow: 1px 1px 3px black;
 
 		.buttons {
 			display: flex;

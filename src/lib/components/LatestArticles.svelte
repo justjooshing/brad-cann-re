@@ -42,6 +42,7 @@
 
 	p {
 		text-align: center;
+		color: $text-primary;
 	}
 	.articles {
 		display: grid;

@@ -61,7 +61,7 @@
 			{#each teamAttributes as { icon, text }}
 				<div class="attribute">
 					<Icon alt {icon} fade scale={2.5} />
-					{text}
+					<span>{text}</span>
 				</div>
 			{/each}
 		</div>
@@ -73,6 +73,7 @@
 
 	.wrapper {
 		display: grid;
+		color: $text-primary;
 		padding-top: 20px;
 		grid-template-rows: repeat(2, 1fr);
 		text-align: center;

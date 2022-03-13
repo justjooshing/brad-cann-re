@@ -48,18 +48,13 @@
 
 		.content {
 			padding-bottom: 1em;
-		}
-
-		&-message {
 			color: $text-primary;
 		}
+
 		&-name {
 			color: black;
 			font-weight: 600;
 			margin-top: 10px;
-		}
-		&-role {
-			color: $text-primary;
 		}
 	}
 </style>
