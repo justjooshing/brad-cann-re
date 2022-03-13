@@ -8,7 +8,6 @@
 	.wrapper {
 		display: flex;
 		place-content: center;
-		margin: 1em;
 	}
 	.underline-bar {
 		height: 3px;

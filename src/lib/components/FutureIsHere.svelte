@@ -8,7 +8,7 @@
 </script>
 
 <div class="wrapper">
-	<ContentWrap {altBg}>
+	<ContentWrap noBottomPadding {altBg}>
 		<Htag size={1} style={2} message="The future is here!" centered />
 		<UnderlineBar />
 		<p>
