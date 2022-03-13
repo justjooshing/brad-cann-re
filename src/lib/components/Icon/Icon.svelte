@@ -5,6 +5,7 @@
 
 	import { getIcon, iconTypes } from '$lib/constants/index.svelte';
 	import { capitaliseFirstLetter } from '$lib/helpers';
+	import IconWrapper from './IconWrapper.svelte';
 
 	const [popperRef, popperContent] = createPopperActions();
 	const popperOptions = {
@@ -29,31 +30,30 @@
 	};
 </script>
 
-<a
-	{href}
-	{rel}
-	{target}
-	class="icon"
-	class:tooltip
-	class:fade
-	class:alt
-	class:pointer
-	aria-describedby={aria}
-	use:popperRef
-	on:mouseenter={updateTooltipState}
-	on:mouseleave={updateTooltipState}
->
-	<Icon {data} {scale} />
-	{#if showTooltip}
-		<div id="tooltip" use:popperContent={popperOptions}>
-			{capitaliseFirstLetter(aria)}
-			<div id="arrow" data-popper-arrow />
-		</div>
-	{/if}
-</a>
+<IconWrapper {href} {rel} {target}>
+	<div
+		class="icon"
+		class:tooltip
+		class:fade
+		class:alt
+		class:pointer
+		aria-describedby={aria}
+		use:popperRef
+		on:mouseenter={updateTooltipState}
+		on:mouseleave={updateTooltipState}
+	>
+		<Icon {data} {scale} />
+		{#if showTooltip}
+			<div id="tooltip" use:popperContent={popperOptions}>
+				{capitaliseFirstLetter(aria)}
+				<div id="arrow" data-popper-arrow />
+			</div>
+		{/if}
+	</div>
+</IconWrapper>
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import '../../global/index.scss';
 
 	.icon {
 		display: flex;

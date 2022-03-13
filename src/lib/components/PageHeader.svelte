@@ -1,7 +1,7 @@
 <script lang="ts">
 	import logo from '$assets/logo.jpg';
 	import { headerLinks } from '$lib/constants/index.svelte';
-	import Icon from './Icon.svelte';
+	import Icon from './Icon/Icon.svelte';
 </script>
 
 <nav class="pageHeader">

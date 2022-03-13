@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ContentWrap from './ContentWrap.svelte';
 	import Htag from './Htag.svelte';
-	import Icon from './Icon.svelte';
+	import Icon from './Icon/Icon.svelte';
 	import UnderlineBar from './UnderlineBar.svelte';
 	import type { iconTypes } from '$lib/constants/index.svelte';
 

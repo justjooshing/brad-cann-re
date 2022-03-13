@@ -3,7 +3,7 @@
 	import Button from './Button.svelte';
 	import ContentWrap from './ContentWrap.svelte';
 	import Htag from './Htag.svelte';
-	import Icon from './Icon.svelte';
+	import Icon from './Icon/Icon.svelte';
 	import UnderlineBar from './UnderlineBar.svelte';
 	import image from '$assets/brad_profile.webp';
 

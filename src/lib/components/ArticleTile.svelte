@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Htag from './Htag.svelte';
-	import Icon from './Icon.svelte';
+	import Icon from './Icon/Icon.svelte';
 
 	export let title: string;
 	export let src: string;

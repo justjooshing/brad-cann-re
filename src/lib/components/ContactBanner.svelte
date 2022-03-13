@@ -1,7 +1,7 @@
 <script>
 	import Button from './Button.svelte';
 	import Htag from './Htag.svelte';
-	import Icon from './Icon.svelte';
+	import Icon from './Icon/Icon.svelte';
 	import { contactLinks } from '$lib/constants/index.svelte';
 </script>
 

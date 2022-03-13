@@ -124,32 +124,32 @@
 			users: {
 				data: users,
 				href: null,
-				aria: 'email'
+				aria: 'three people'
 			},
 			results: {
 				data: results,
 				href: null,
-				aria: 'email'
+				aria: 'graph'
 			},
 			star: {
 				data: star,
 				href: null,
-				aria: 'email'
+				aria: 'star'
 			},
 			trophy: {
 				data: trophy,
 				href: null,
-				aria: 'email'
+				aria: 'trophy'
 			},
 			tie: {
 				data: tie,
 				href: null,
-				aria: 'email'
+				aria: 'tie'
 			},
 			dollar: {
 				data: dollar,
 				href: null,
-				aria: 'email'
+				aria: 'dollar'
 			},
 			link: {
 				data: link,
