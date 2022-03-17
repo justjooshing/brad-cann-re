@@ -4,7 +4,9 @@
 </script>
 
 <section class="wrapper" class:altBg class:noBottomPadding>
-	<slot />
+	<div class="content">
+		<slot />
+	</div>
 </section>
 
 <style lang="scss">
@@ -13,8 +15,17 @@
 	.wrapper {
 		display: flex;
 		flex-direction: column;
-		padding: 1em;
+		padding: 3em;
 		background: $bg-primary;
+		place-items: center;
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			max-width: 1200px;
+			place-items: center;
+			place-content: center;
+		}
 	}
 	.noBottomPadding {
 		padding-bottom: 0em;

@@ -3,7 +3,7 @@
 	import { createPopperActions } from 'svelte-popperjs';
 	import type { Placement } from '@popperjs/core';
 
-	import { getIcon, iconTypes } from '$lib/constants/index.svelte';
+	import { getIcon, type iconTypes } from '$lib/constants/index.svelte';
 	import { capitaliseFirstLetter } from '$lib/helpers';
 	import IconWrapper from './IconWrapper.svelte';
 

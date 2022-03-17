@@ -27,8 +27,9 @@
 		background-image: url('$assets/contact-us.webp');
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: top;
 		display: flex;
+		min-height: 250px;
 
 		.content {
 			width: 100%;
@@ -54,6 +55,8 @@
 				span {
 					font-size: $text-standard;
 					margin-left: 15px;
+					color: $text-primary;
+					font-weight: bold;
 				}
 			}
 		}

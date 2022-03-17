@@ -96,8 +96,8 @@
 	.enquiry-form {
 		:global(form) {
 			display: grid;
-      grid-template-columns: auto;
-      grid-gap: 1em;
-    }
+			grid-template-columns: auto;
+			grid-gap: 1em;
+		}
 	}
 </style>

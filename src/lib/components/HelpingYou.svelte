@@ -48,29 +48,38 @@
 	.wrapper {
 		display: grid;
 		grid-template-rows: auto 1fr;
-		grid-gap: 2em;
+		text-align: center;
+		grid-gap: 4em;
 		place-items: center;
 		@include medium {
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: auto 1fr;
 			grid-template-rows: auto;
+			text-align: left;
 		}
 
 		.image {
 			max-height: 400px;
 			width: auto;
 		}
-		p {
-			line-height: 1.5em;
+
+		p,
+		span {
 			color: $text-primary;
 		}
-		span {
-			font-size: $text-standard;
-			margin-left: 15px;
+		p {
+			line-height: 1.5em;
 		}
+
 		.button {
 			display: flex;
 			place-content: center;
 			place-items: center;
+
+			span {
+				font-size: $text-standard;
+				margin-left: 15px;
+				font-weight: 600;
+			}
 		}
 	}
 </style>

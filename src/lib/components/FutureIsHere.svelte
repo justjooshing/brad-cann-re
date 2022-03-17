@@ -31,6 +31,7 @@
 	@import '../global/index.scss';
 	.image {
 		width: 100%;
+		max-width: 800px;
 	}
 
 	p {
