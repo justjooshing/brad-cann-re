@@ -2,6 +2,7 @@
 	export let href: string = undefined;
 	export let onclick: (val?: unknown) => void = undefined;
 	export let lrg = false;
+	export let type = 'button';
 </script>
 
 <div class="wrapper">
@@ -9,7 +10,7 @@
 		{#if href}
 			<a {href}><slot /></a>
 		{:else}
-			<button {onclick}><slot /></button>
+			<button {type} {onclick}><slot /></button>
 		{/if}
 	</div>
 </div>
@@ -38,6 +39,7 @@
 		button,
 		a {
 			color: $button-text;
+			background-color: inherit;
 			border: none;
 			font-weight: bold;
 			text-decoration: none;

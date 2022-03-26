@@ -32,29 +32,35 @@
 
 <SecondaryHeader {headerTitle} />
 <ContentWrap>
-	{#each copy as { text, points }}
-		<p>{text}</p>
-		{#if points}
-			<ul>
-				{#each points as point}
-					<li>
-						{point}
-					</li>
-				{/each}
-			</ul>
-		{/if}
-	{/each}
-	<EnquiryForm />
+	<div class="sales">
+		{#each copy as { text, points }}
+			<p>{text}</p>
+			{#if points}
+				<ul>
+					{#each points as point}
+						<li>
+							{point}
+						</li>
+					{/each}
+				</ul>
+			{/if}
+		{/each}
+		<EnquiryForm />
+	</div>
 </ContentWrap>
 
 <style lang="scss">
 	@import '../lib/global/index.scss';
 
-	p,
-	ul {
-		color: $text-primary;
-	}
-	p {
-		margin-bottom: 0%;
+	.sales {
+		p,
+		ul {
+			font-size: $text-large;
+			line-height: 1.5em;
+			color: $text-primary;
+		}
+		p {
+			margin-bottom: 0%;
+		}
 	}
 </style>
