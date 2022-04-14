@@ -33,6 +33,7 @@
 	"dependencies": {
 		"@popperjs/core": "^2.11.0",
 		"svelte-awesome": "^2.4.2",
-		"svelte-forms-lib": "^2.0.1"
+		"svelte-forms-lib": "^2.0.1",
+		"svelte-portal": "^2.1.2"
 	}
 }

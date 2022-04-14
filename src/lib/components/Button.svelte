@@ -6,13 +6,11 @@
 </script>
 
 <div class="wrapper">
-	<div class="button" class:lrg>
-		{#if href}
-			<a {href}><slot /></a>
-		{:else}
-			<button {type} {onclick}><slot /></button>
-		{/if}
-	</div>
+	{#if href}
+		<a class="button" class:lrg {href}><slot /></a>
+	{:else}
+		<button class="button" class:lrg {type} on:click={onclick}><slot /></button>
+	{/if}
 </div>
 
 <style lang="scss">
@@ -22,31 +20,28 @@
 		display: flex;
 		place-content: center;
 		place-items: center;
+		* {
+			cursor: pointer;
+		}
 	}
 	.button {
 		font-size: $text-small;
 		padding: 15px 15px;
 		border-radius: 3px;
-		cursor: pointer;
+		border: none;
 		text-shadow: none;
 		text-align: center;
+		text-decoration: none;
 		background-color: $button;
+		color: $button-text;
+		font-weight: bold;
 		@include fade(background-color);
+		&:active,
+		&:visited {
+			color: $button-text;
+		}
 		&:hover {
 			background-color: $button-hover;
-		}
-
-		button,
-		a {
-			color: $button-text;
-			background-color: inherit;
-			border: none;
-			font-weight: bold;
-			text-decoration: none;
-			&:active,
-			&:visited {
-				color: $button-text;
-			}
 		}
 	}
 	.lrg {

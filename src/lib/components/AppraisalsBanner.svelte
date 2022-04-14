@@ -3,8 +3,17 @@
 	import Button from './Button.svelte';
 	import ContentWrap from './ContentWrap.svelte';
 	import Htag from './Htag.svelte';
+	import Modal, { openModal } from '$lib/components/Modal.svelte';
+	import EnquiryForm from './EnquiryForm.svelte';
 
 	export let altBg = false;
+
+	const openSalesAppraisals = () => {
+		openModal('sales-appraisals');
+	};
+	const openRentalAppraisals = () => {
+		openModal('rental-appraisals');
+	};
 </script>
 
 <BackgroundPier />
@@ -19,11 +28,18 @@
 		/>
 		<Htag size={2} style={5} message="Request an appraisal today" />
 		<div class="buttons">
-			<Button href="/sales">SALES APPRAISAL</Button>
-			<Button href="/rentals">RENTAL APPRAISAL</Button>
+			<Button onclick={openSalesAppraisals}>SALES APPRAISAL</Button>
+			<Button onclick={openRentalAppraisals}>RENTAL APPRAISAL</Button>
 		</div>
 	</div>
 </ContentWrap>
+
+<Modal name="sales-appraisals">
+	<EnquiryForm />
+</Modal>
+<Modal name="rental-appraisals">
+	<EnquiryForm />
+</Modal>
 
 <style lang="scss">
 	@import '../global/index.scss';
