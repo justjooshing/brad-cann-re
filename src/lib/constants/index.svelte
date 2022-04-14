@@ -157,4 +157,43 @@
 				aria: "link"
 			}
 		}[icon]);
+
+	export const rentalEnquiryCopy = [
+		{
+			text: "Understanding the true worth of your investment, not just for now but the future too, is something all property investors should be on top of."
+		},
+		{
+			text: "With a free rental appraisal from Brad Cann and Partners, you can be confident that you are getting a high-quality and accurate assessment of the potential return on investment that can give you that knowledge."
+		},
+		{
+			text: "Thanks to the detailed reports our property managers compile that include current market trends and conditions as well as what similar properties are being rented for in the area and the surrounding suburbs, we put you in the best position to make the best decision for your investment."
+		},
+		{
+			text: "No matter what stage of the investment journey you are in, be assured you'll receive the best possible service."
+		},
+		{
+			text: "When it comes to your property and your success, make the intelligent choice. Get a rental appraisal for your investment property with Brad Cann and Partners today."
+		}
+	];
+
+	export const salesEnquiryCopy = [
+		{
+			text: "Selling your property can be a lengthy and difficult process if you aren't in the know."
+		},
+		{ text: "Often, it's difficult to even know where to start." },
+		{
+			text: "When you start your sales journey a sales appraisal, also known as a property appraisal, you'll get an accurate picture of what your property is truly worth and an understanding of what it can sell for."
+		},
+		{
+			text: "Looking at all the relevant factors, our experienced and motivated sales consultants have the knowledge and experience to give you a smooth and reassuring journey from the very beginning of the property sales process."
+		},
+		{
+			text: "While there's a lot that can go into a market appraisal, some key aspects considered are:",
+			points: ["Suburb", "Comparable sales", "Presentation", "Marketing"]
+		},
+		{
+			text: "When it comes to your property's sales appraisal and achieving the best possible price, choose Brad Cann and Partners."
+		},
+		{ text: "We'll help you understand exactly what your property is worth." }
+	];
 </script>

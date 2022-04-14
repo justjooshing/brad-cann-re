@@ -2,6 +2,8 @@
 	import { Form, Field, Textarea, Select, createForm } from "svelte-forms-lib";
 	import Button from "./Button.svelte";
 
+	export let formName: string;
+
 	const context = createForm({
 		initialValues: {
 			name: "",
@@ -9,7 +11,8 @@
 			phone: "",
 			address: "",
 			"property-type": "",
-			comments: ""
+			comments: "",
+			"enquiry-type": formName
 		},
 		onSubmit: (values) => {
 			console.log(values);
