@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Button from './Button.svelte';
-	import ContentWrap from './ContentWrap.svelte';
-	import Htag from './Htag.svelte';
-	import testimonialImage from '$assets/testimonials.webp';
+	import Button from "./Button.svelte";
+	import ContentWrap from "./ContentWrap.svelte";
+	import Htag from "./Htag.svelte";
+	import testimonialImage from "$assets/testimonials.webp";
 
 	export let altBg = false;
 
-	const href = '/testimonials';
+	const href = "/testimonials";
 </script>
 
 <ContentWrap {altBg}>
@@ -30,7 +30,7 @@
 </ContentWrap>
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import "../global/index.scss";
 	p {
 		line-height: 1.5;
 		margin: 0;

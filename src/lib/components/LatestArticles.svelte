@@ -1,26 +1,26 @@
 <script>
-	import ArticleTile from './ArticleTile.svelte';
-	import ContentWrap from './ContentWrap.svelte';
-	import Htag from './Htag.svelte';
-	import UnderlineBar from './UnderlineBar.svelte';
+	import ArticleTile from "./ArticleTile.svelte";
+	import ContentWrap from "./ContentWrap.svelte";
+	import Htag from "./Htag.svelte";
+	import UnderlineBar from "./UnderlineBar.svelte";
 
-	import sellingMistakes from '$assets/selling-mistakes.webp';
-	import sellingTips from '$assets/selling-tips.webp';
-	import howToBuy from '$assets/how-to-buy.webp';
+	import sellingMistakes from "$assets/selling-mistakes.webp";
+	import sellingTips from "$assets/selling-tips.webp";
+	import howToBuy from "$assets/how-to-buy.webp";
 
 	export let altBg = false;
 
 	const articles = [
 		{
-			title: '12 mistakes to avoid when selling your home',
+			title: "12 mistakes to avoid when selling your home",
 			src: sellingMistakes
 		},
 		{
-			title: '10 best kept secrets for selling your home',
+			title: "10 best kept secrets for selling your home",
 			src: sellingTips
 		},
 		{
-			title: 'First home buyer guide',
+			title: "First home buyer guide",
 			src: howToBuy
 		}
 	];
@@ -38,7 +38,7 @@
 </ContentWrap>
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import "../global/index.scss";
 
 	p {
 		text-align: center;

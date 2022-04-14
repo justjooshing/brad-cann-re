@@ -1,17 +1,17 @@
 <script lang="ts">
-	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import { createPopperActions } from 'svelte-popperjs';
-	import type { Placement } from '@popperjs/core';
+	import Icon from "svelte-awesome/components/Icon.svelte";
+	import { createPopperActions } from "svelte-popperjs";
+	import type { Placement } from "@popperjs/core";
 
-	import { getIcon } from '$lib/constants/index.svelte';
-	import type { iconTypes } from '$lib/constants/index.svelte';
-	import { capitaliseFirstLetter } from '$lib/helpers';
-	import IconWrapper from './IconWrapper.svelte';
+	import { getIcon } from "$lib/constants/index.svelte";
+	import type { iconTypes } from "$lib/constants/index.svelte";
+	import { capitaliseFirstLetter } from "$lib/helpers";
+	import IconWrapper from "./IconWrapper.svelte";
 
 	const [popperRef, popperContent] = createPopperActions();
 	const popperOptions = {
-		placement: 'top' as Placement,
-		modifiers: [{ name: 'offset', options: { offset: [0, 10] } }]
+		placement: "top" as Placement,
+		modifiers: [{ name: "offset", options: { offset: [0, 10] } }]
 	};
 
 	export let icon: iconTypes;
@@ -54,7 +54,7 @@
 </IconWrapper>
 
 <style lang="scss">
-	@import '../../global/index.scss';
+	@import "../../global/index.scss";
 	.icon {
 		display: flex;
 		color: $text-secondary;

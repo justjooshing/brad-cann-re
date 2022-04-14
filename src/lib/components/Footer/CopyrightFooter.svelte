@@ -1,5 +1,5 @@
 <script>
-	import Icon from '../Icon/Icon.svelte';
+	import Icon from "../Icon/Icon.svelte";
 
 	const currentYear = new Date().getFullYear();
 </script>
@@ -14,7 +14,7 @@
 </div>
 
 <style lang="scss">
-	@import '../../global/index.scss';
+	@import "../../global/index.scss";
 	.copyright {
 		padding: 2em;
 		display: flex;

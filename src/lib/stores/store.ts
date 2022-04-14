@@ -1,7 +1,7 @@
-import { writable } from 'svelte/store';
+import { writable } from "svelte/store";
 
 const titleStore = () => {
-	const { set, subscribe } = writable('');
+	const { set, subscribe } = writable("");
 
 	return {
 		subscribe,
@@ -9,7 +9,7 @@ const titleStore = () => {
 			set(`${val} - Brad Cann and Partners - Chelsea`);
 		},
 		clear: () => {
-			set('Brad Cann and Partners - Chelsea');
+			set("Brad Cann and Partners - Chelsea");
 		}
 	};
 };

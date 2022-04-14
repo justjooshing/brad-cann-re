@@ -1,22 +1,22 @@
 <script lang="ts">
-	import { Form, Field, Textarea, Select, createForm } from 'svelte-forms-lib';
-	import Button from './Button.svelte';
+	import { Form, Field, Textarea, Select, createForm } from "svelte-forms-lib";
+	import Button from "./Button.svelte";
 
 	const context = createForm({
 		initialValues: {
-			name: '',
-			email: '',
-			phone: '',
-			address: '',
-			'property-type': '',
-			comments: ''
+			name: "",
+			email: "",
+			phone: "",
+			address: "",
+			"property-type": "",
+			comments: ""
 		},
 		onSubmit: (values) => {
 			console.log(values);
 		}
 	});
 
-	const propertyTypes = ['House', 'Unit', 'Townhouse', 'Land'];
+	const propertyTypes = ["House", "Unit", "Townhouse", "Land"];
 </script>
 
 <div class="enquiry-form">
@@ -52,7 +52,7 @@
 </div>
 
 <style lang="scss">
-	@import '../../lib/global/index.scss';
+	@import "../../lib/global/index.scss";
 
 	.enquiry-form {
 		display: flex;

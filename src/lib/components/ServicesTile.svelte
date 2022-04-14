@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Button from './Button.svelte';
+	import Button from "./Button.svelte";
 
-	import Htag from './Htag.svelte';
+	import Htag from "./Htag.svelte";
 
 	export let heading: string;
 	export let text: string;
@@ -23,7 +23,7 @@
 </div>
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import "../global/index.scss";
 
 	.wrapper {
 		display: flex;

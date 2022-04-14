@@ -10,7 +10,7 @@
 </section>
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import "../global/index.scss";
 
 	.wrapper {
 		display: flex;

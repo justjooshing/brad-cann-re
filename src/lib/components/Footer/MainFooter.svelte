@@ -5,8 +5,8 @@
 		openDays,
 		openHours,
 		siteLinks
-	} from '$lib/constants/index.svelte';
-	import { capitaliseFirstLetter } from '$lib/helpers';
+	} from "$lib/constants/index.svelte";
+	import { capitaliseFirstLetter } from "$lib/helpers";
 
 	const contactDetails = Object.entries(contact);
 </script>
@@ -43,7 +43,7 @@
 </div>
 
 <style lang="scss">
-	@import '../../global/index.scss';
+	@import "../../global/index.scss";
 
 	@mixin link-style {
 		a {

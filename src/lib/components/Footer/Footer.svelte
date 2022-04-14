@@ -1,6 +1,6 @@
 <script>
-	import CopywrightFooter from './CopyrightFooter.svelte';
-	import MainFooter from './MainFooter.svelte';
+	import CopywrightFooter from "./CopyrightFooter.svelte";
+	import MainFooter from "./MainFooter.svelte";
 </script>
 
 <div class="footer">

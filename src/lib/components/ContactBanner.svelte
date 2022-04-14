@@ -1,8 +1,8 @@
 <script>
-	import Button from './Button.svelte';
-	import Htag from './Htag.svelte';
-	import Icon from './Icon/Icon.svelte';
-	import { contactLinks } from '$lib/constants/index.svelte';
+	import Button from "./Button.svelte";
+	import Htag from "./Htag.svelte";
+	import Icon from "./Icon/Icon.svelte";
+	import { contactLinks } from "$lib/constants/index.svelte";
 </script>
 
 <div class="wrapper">
@@ -21,10 +21,10 @@
 </div>
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import "../global/index.scss";
 
 	.wrapper {
-		background-image: url('$assets/contact-us.webp');
+		background-image: url("$assets/contact-us.webp");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: top;

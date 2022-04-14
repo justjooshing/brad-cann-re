@@ -1,7 +1,7 @@
 <script>
-	import Footer from '$lib/components/Footer/Footer.svelte';
-	import PageHeader from '$lib/components/PageHeader.svelte';
-	import { title } from '$lib/stores/store';
+	import Footer from "$lib/components/Footer/Footer.svelte";
+	import PageHeader from "$lib/components/PageHeader.svelte";
+	import { title } from "$lib/stores/store";
 </script>
 
 <svelte:head>

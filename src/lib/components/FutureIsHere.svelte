@@ -1,8 +1,8 @@
 <script>
-	import ContentWrap from './ContentWrap.svelte';
-	import Htag from './Htag.svelte';
-	import UnderlineBar from './UnderlineBar.svelte';
-	import image from '$assets/future-is-here.webp';
+	import ContentWrap from "./ContentWrap.svelte";
+	import Htag from "./Htag.svelte";
+	import UnderlineBar from "./UnderlineBar.svelte";
+	import image from "$assets/future-is-here.webp";
 
 	export let altBg = false;
 </script>
@@ -28,7 +28,7 @@
 </div>
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import "../global/index.scss";
 	.image {
 		width: 100%;
 		max-width: 800px;

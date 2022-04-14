@@ -1,50 +1,50 @@
 <script lang="ts" context="module">
-	import phone from 'svelte-awesome/icons/phone';
-	import facebookF from 'svelte-awesome/icons/facebook-f';
-	import home from 'svelte-awesome/icons/home';
-	import envelope from 'svelte-awesome/icons/envelope-o';
-	import users from 'svelte-awesome/icons/users';
-	import star from 'svelte-awesome/icons/star';
-	import trophy from 'svelte-awesome/icons/trophy';
-	import tie from 'svelte-awesome/icons/black-tie';
-	import dollar from 'svelte-awesome/icons/dollar';
-	import results from 'svelte-awesome/icons/signal';
-	import link from 'svelte-awesome/icons/link';
+	import phone from "svelte-awesome/icons/phone";
+	import facebookF from "svelte-awesome/icons/facebook-f";
+	import home from "svelte-awesome/icons/home";
+	import envelope from "svelte-awesome/icons/envelope-o";
+	import users from "svelte-awesome/icons/users";
+	import star from "svelte-awesome/icons/star";
+	import trophy from "svelte-awesome/icons/trophy";
+	import tie from "svelte-awesome/icons/black-tie";
+	import dollar from "svelte-awesome/icons/dollar";
+	import results from "svelte-awesome/icons/signal";
+	import link from "svelte-awesome/icons/link";
 
 	export const contact = {
-		phone: '0438833354',
-		email: 'brad@bradcannre.com.au'
+		phone: "0438833354",
+		email: "brad@bradcannre.com.au"
 	};
 	export const contactLinks = {
 		phone: `tel:${contact.phone}`,
-		facebook: 'https://www.facebook.com/Brad-Cann-Real-Estate-106718608345609',
+		facebook: "https://www.facebook.com/Brad-Cann-Real-Estate-106718608345609",
 		email: `mailto:${contact.email}`
 	};
 
-	export const openHours = '9:00am - 5:30pm';
+	export const openHours = "9:00am - 5:30pm";
 	export const openDays = [
-		'Monday',
-		'Tuesday',
-		'Wednesday',
-		'Thursday',
-		'Friday',
-		'Saturday',
-		'Sunday'
+		"Monday",
+		"Tuesday",
+		"Wednesday",
+		"Thursday",
+		"Friday",
+		"Saturday",
+		"Sunday"
 	];
 
 	const pages = [
-		'Sellers',
-		'Buyers',
-		'Property Management',
-		'About Us',
-		'Contact Us',
-		'Privacy Policy'
+		"Sellers",
+		"Buyers",
+		"Property Management",
+		"About Us",
+		"Contact Us",
+		"Privacy Policy"
 	];
 
-	const headerPages = ['about', 'contact'];
+	const headerPages = ["about", "contact"];
 
 	export const siteLinks = pages.map((page) => ({
-		href: `/${page.split(' ')[0].toLowerCase()}`,
+		href: `/${page.split(" ")[0].toLowerCase()}`,
 		text: page
 	}));
 
@@ -66,17 +66,17 @@
 	}));
 
 	export type iconTypes =
-		| 'phone'
-		| 'facebook'
-		| 'home'
-		| 'email'
-		| 'users'
-		| 'results'
-		| 'star'
-		| 'trophy'
-		| 'tie'
-		| 'dollar'
-		| 'link';
+		| "phone"
+		| "facebook"
+		| "home"
+		| "email"
+		| "users"
+		| "results"
+		| "star"
+		| "trophy"
+		| "tie"
+		| "dollar"
+		| "link";
 
 	interface getIconTypes {
 		data:
@@ -102,59 +102,59 @@
 			phone: {
 				data: phone,
 				href: contactLinks.phone,
-				aria: 'phone'
+				aria: "phone"
 			},
 			facebook: {
 				data: facebookF,
 				href: contactLinks.facebook,
-				aria: 'facebook',
-				target: '_blank',
-				rel: 'noopener noreferrer'
+				aria: "facebook",
+				target: "_blank",
+				rel: "noopener noreferrer"
 			},
 			home: {
 				data: home,
-				href: '/',
-				aria: 'home'
+				href: "/",
+				aria: "home"
 			},
 			email: {
 				data: envelope,
 				href: contactLinks.email,
-				aria: 'email'
+				aria: "email"
 			},
 			users: {
 				data: users,
 				href: null,
-				aria: 'three people'
+				aria: "three people"
 			},
 			results: {
 				data: results,
 				href: null,
-				aria: 'graph'
+				aria: "graph"
 			},
 			star: {
 				data: star,
 				href: null,
-				aria: 'star'
+				aria: "star"
 			},
 			trophy: {
 				data: trophy,
 				href: null,
-				aria: 'trophy'
+				aria: "trophy"
 			},
 			tie: {
 				data: tie,
 				href: null,
-				aria: 'tie'
+				aria: "tie"
 			},
 			dollar: {
 				data: dollar,
 				href: null,
-				aria: 'dollar'
+				aria: "dollar"
 			},
 			link: {
 				data: link,
 				href: null,
-				aria: 'link'
+				aria: "link"
 			}
 		}[icon]);
 </script>

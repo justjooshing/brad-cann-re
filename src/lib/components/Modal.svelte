@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	import { openModals } from '$lib/store/stores.svelte';
+	import { openModals } from "$lib/store/stores.svelte";
 
 	export const openModal = (name: string): void => openModals.update((n) => [...n, name]);
 	export const closeModal = (name: string): void =>
@@ -7,8 +7,8 @@
 </script>
 
 <script lang="ts">
-	import { fade } from 'svelte/transition';
-	import Portal from 'svelte-portal';
+	import { fade } from "svelte/transition";
+	import Portal from "svelte-portal";
 
 	export let name: string;
 
@@ -80,7 +80,7 @@
 				padding: 3px;
 				background: transparent;
 				color: #bbb;
-				content: '\00D7';
+				content: "\00D7";
 				font-size: 26px;
 				font-weight: 400;
 				line-height: 26px;

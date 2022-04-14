@@ -1,7 +1,7 @@
 <script>
-	import { title } from '$lib/stores/store';
+	import { title } from "$lib/stores/store";
 
-	const page = 'Contact';
+	const page = "Contact";
 	title.set(page);
 </script>
 

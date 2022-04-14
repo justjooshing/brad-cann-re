@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { contact, contactLinks } from '$lib/constants/index.svelte';
-	import Button from './Button.svelte';
-	import ContentWrap from './ContentWrap.svelte';
-	import Htag from './Htag.svelte';
-	import Icon from './Icon/Icon.svelte';
-	import UnderlineBar from './UnderlineBar.svelte';
-	import image from '$assets/brad_profile.webp';
+	import { contact, contactLinks } from "$lib/constants/index.svelte";
+	import Button from "./Button.svelte";
+	import ContentWrap from "./ContentWrap.svelte";
+	import Htag from "./Htag.svelte";
+	import Icon from "./Icon/Icon.svelte";
+	import UnderlineBar from "./UnderlineBar.svelte";
+	import image from "$assets/brad_profile.webp";
 
 	export let altBg = false;
 </script>
@@ -43,7 +43,7 @@
 </ContentWrap>
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import "../global/index.scss";
 
 	.wrapper {
 		display: grid;

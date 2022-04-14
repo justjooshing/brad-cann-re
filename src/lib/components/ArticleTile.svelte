@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Htag from './Htag.svelte';
-	import Icon from './Icon/Icon.svelte';
+	import Htag from "./Htag.svelte";
+	import Icon from "./Icon/Icon.svelte";
 
 	export let title: string;
 	export let src: string;
 
-	const icon = 'link';
-	const href = title.toLowerCase().split(' ').join('-');
+	const icon = "link";
+	const href = title.toLowerCase().split(" ").join("-");
 </script>
 
 <div class="wrapper">
@@ -24,7 +24,7 @@
 </div>
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import "../global/index.scss";
 
 	.wrapper {
 		text-align: center;

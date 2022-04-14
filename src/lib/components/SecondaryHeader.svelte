@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Htag from './Htag.svelte';
-	import bradImage from '$assets/brad_profile.webp';
+	import Htag from "./Htag.svelte";
+	import bradImage from "$assets/brad_profile.webp";
 
 	export let headerTitle: string;
 	export let headerBgImage: string = bradImage;

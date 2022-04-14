@@ -1,9 +1,9 @@
 <script lang="ts">
-	import ContentWrap from './ContentWrap.svelte';
-	import Htag from './Htag.svelte';
-	import Icon from './Icon/Icon.svelte';
-	import UnderlineBar from './UnderlineBar.svelte';
-	import type { iconTypes } from '$lib/constants/index.svelte';
+	import ContentWrap from "./ContentWrap.svelte";
+	import Htag from "./Htag.svelte";
+	import Icon from "./Icon/Icon.svelte";
+	import UnderlineBar from "./UnderlineBar.svelte";
+	import type { iconTypes } from "$lib/constants/index.svelte";
 
 	export let altBg = false;
 
@@ -13,28 +13,28 @@
 	}
 	const teamAttributes: teamAttributeTypes[] = [
 		{
-			icon: 'users',
-			text: 'Dedicated team'
+			icon: "users",
+			text: "Dedicated team"
 		},
 		{
-			icon: 'results',
-			text: 'Focus on results'
+			icon: "results",
+			text: "Focus on results"
 		},
 		{
-			icon: 'star',
-			text: 'Committed to quality'
+			icon: "star",
+			text: "Committed to quality"
 		},
 		{
-			icon: 'trophy',
-			text: 'Proven track record'
+			icon: "trophy",
+			text: "Proven track record"
 		},
 		{
-			icon: 'tie',
-			text: 'Professional'
+			icon: "tie",
+			text: "Professional"
 		},
 		{
-			icon: 'dollar',
-			text: 'Cost effective'
+			icon: "dollar",
+			text: "Cost effective"
 		}
 	];
 </script>
@@ -69,7 +69,7 @@
 </ContentWrap>
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import "../global/index.scss";
 
 	.wrapper {
 		display: grid;

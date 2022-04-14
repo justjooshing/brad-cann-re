@@ -21,7 +21,7 @@
 {/if}
 
 <style lang="scss">
-	@import '../global/index.scss';
+	@import "../global/index.scss";
 
 	@mixin common {
 		font-weight: normal;
