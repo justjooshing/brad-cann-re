@@ -7,7 +7,7 @@
 	import Services from "$lib/components/Services.svelte";
 	import Testimonials from "$lib/components/Testimonials.svelte";
 	import WhyBrad from "$lib/components/WhyBrad.svelte";
-	import { title } from "$lib/stores/store";
+	import { title } from "$lib/store/stores.svelte";
 
 	title.clear();
 </script>

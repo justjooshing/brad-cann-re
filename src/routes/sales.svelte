@@ -2,7 +2,7 @@
 	import ContentWrap from "$lib/components/ContentWrap.svelte";
 	import EnquiryForm from "$lib/components/EnquiryForm.svelte";
 	import SecondaryHeader from "$lib/components/SecondaryHeader.svelte";
-	import { title } from "$lib/stores/store";
+	import { title } from "$lib/store/stores.svelte";
 
 	const headerTitle = "Get a sales appraisal today";
 	const page = "Sales Appraisals";

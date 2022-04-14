@@ -1,5 +1,5 @@
 <script>
-	import { title } from "$lib/stores/store";
+	import { title } from "$lib/store/stores.svelte";
 
 	const page = "Contact";
 	title.set(page);
