@@ -67,7 +67,7 @@
 			color: $text-primary;
 		}
 		p {
-			line-height: 1.5em;
+			line-height: $line-height-standard;
 		}
 
 		.button {

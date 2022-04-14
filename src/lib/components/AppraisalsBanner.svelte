@@ -89,7 +89,7 @@
 		p,
 		ul {
 			font-size: $text-standard;
-			line-height: 1.5em;
+			line-height: $line-height-standard;
 			color: $text-primary;
 		}
 		p {

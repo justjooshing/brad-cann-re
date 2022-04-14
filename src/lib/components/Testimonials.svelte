@@ -32,7 +32,7 @@
 <style lang="scss">
 	@import "../global/index.scss";
 	p {
-		line-height: 1.5;
+		line-height: $line-height-standard;
 		margin: 0;
 	}
 

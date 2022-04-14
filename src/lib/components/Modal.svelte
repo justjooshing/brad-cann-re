@@ -33,6 +33,8 @@
 {/if}
 
 <style lang="scss">
+	@import "../global/index.scss";
+
 	.modal {
 		display: flex;
 		position: fixed;
@@ -83,7 +85,7 @@
 				content: "\00D7";
 				font-size: 26px;
 				font-weight: 400;
-				line-height: 26px;
+				line-height: $line-height-standard;
 				text-align: center;
 			}
 		}

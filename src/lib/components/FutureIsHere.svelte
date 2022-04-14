@@ -36,7 +36,7 @@
 
 	p {
 		text-align: center;
-		line-height: 1.5em;
+		line-height: $line-height-standard;
 		color: $text-primary;
 	}
 </style>

@@ -82,7 +82,7 @@
 			grid-template-rows: auto;
 		}
 		p {
-			line-height: 1.5;
+			line-height: $line-height-standard;
 		}
 
 		.attributes {

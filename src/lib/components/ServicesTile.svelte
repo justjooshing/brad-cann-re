@@ -32,7 +32,7 @@
 		place-content: space-between;
 		color: $text-primary;
 		p {
-			line-height: 1.5;
+			line-height: $line-height-standard;
 		}
 		.image {
 			overflow: hidden;

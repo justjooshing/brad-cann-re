@@ -56,7 +56,7 @@
 		p,
 		ul {
 			font-size: $text-large;
-			line-height: 1.5em;
+			line-height: $line-height-standard;
 			color: $text-primary;
 		}
 		p {
