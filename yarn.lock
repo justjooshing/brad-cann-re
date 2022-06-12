@@ -1442,10 +1442,10 @@ svelte-popperjs@^1.2.8:
   resolved "https://registry.yarnpkg.com/svelte-popperjs/-/svelte-popperjs-1.2.8.tgz#b6231164c5f4f91bffcfa486a09b05bc0d8e8700"
   integrity sha512-tbZmJWpNxAuv+kLNopcF9f0MXQeCHLmafl4IyVnPI1IJWjgkHUFTTL2HhVMDrRm6jsy7O/RR6AAVTeYe4p7lTQ==
 
-svelte-portal@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/svelte-portal/-/svelte-portal-2.1.2.tgz#5a355c18c9782149f94cbb1649ecbdf3d3667293"
-  integrity sha512-u1ONI4ZJDNhVJPDW7tH6RH1ZIzALt6kJZbF00Hz9bgNIVRlzvzimsnwf35rGFMtPFA+FYenvsTHUR815yYNc9A==
+svelte-portal@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/svelte-portal/-/svelte-portal-2.2.0.tgz#794bdd7626e88a7023cd0ff3832c547af827deaf"
+  integrity sha512-jhtZWtD6cUE2nMw46dJ5VXWYiqnER+JH+V/BmNBQ5fNP/YdsJCpJi+DemUy9msklqGb0f+wLhJPBtKHLWQvzjg==
 
 svelte-preprocess@^4.0.0, svelte-preprocess@^4.10.1:
   version "4.10.4"
