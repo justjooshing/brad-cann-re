@@ -26,6 +26,7 @@
 	@mixin common {
 		font-weight: normal;
 		color: $text-primary;
+		font-family: $header;
 	}
 	.centered {
 		text-align: center;

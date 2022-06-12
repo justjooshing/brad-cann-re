@@ -6,6 +6,10 @@
 
 <svelte:head>
 	<title>{$title}</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Quicksand&display=swap"
+		rel="stylesheet"
+	/>
 </svelte:head>
 
 <PageHeader />
