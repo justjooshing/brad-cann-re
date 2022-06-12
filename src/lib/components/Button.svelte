@@ -2,14 +2,15 @@
 	export let href: string = undefined;
 	export let onclick: (val?: unknown) => void = undefined;
 	export let lrg = false;
+	export let sml = false;
 	export let type = "button";
 </script>
 
 <div class="wrapper">
 	{#if href}
-		<a class="button" class:lrg {href}><slot /></a>
+		<a class="button" class:sml class:lrg {href}><slot /></a>
 	{:else}
-		<button class="button" class:lrg {type} on:click={onclick}><slot /></button>
+		<button class="button" class:sml class:lrg {type} on:click={onclick}><slot /></button>
 	{/if}
 </div>
 
@@ -35,6 +36,8 @@
 		background-color: $button;
 		color: $button-text;
 		font-weight: bold;
+		margin: 5px;
+
 		@include fade(background-color);
 		&:active,
 		&:visited {
@@ -46,5 +49,8 @@
 	}
 	.lrg {
 		font-size: $text-large;
+	}
+	.sml {
+		padding: 15px 8px;
 	}
 </style>

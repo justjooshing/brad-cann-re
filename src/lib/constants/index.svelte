@@ -196,4 +196,30 @@
 		},
 		{ text: "We'll help you understand exactly what your property is worth." }
 	];
+
+	export const managementEnquiryCopy = [
+		{
+			text: "Brad Cann and Partners goal is to create the best property management experience for investors and tenants. We achieve this by ensuring our clients receive unparalleled service from experienced professionals."
+		},
+		{
+			text: "Our real estate industry experts help property investors build rewarding property portfolios and ensure tenants have a seamlessly positive experience renting through us."
+		},
+		{
+			text: "We pride ourselves on offering a holistic service to suit individual leasing and management needs which are designed to achieve the best possible return on investment and deliver a stress-free experience."
+		},
+		{
+			text: "Our dedicated team of property managers offer a variety of valuable services. These include:",
+			points: [
+				"Helping to select the right property to purchase to suit the tenant demographics of the area",
+				"Renovation advice to improve rental returns",
+				"Advice on how to make your property attractive to tenants based on primary data",
+				"Implementation of strategies to ensure maximised returns on investments",
+				"Tailored management in line with individual property investment strategies",
+				"Comprehensive market analyses"
+			]
+		},
+		{
+			text: "If you are interested in seeking professional property management for your asset, fill out our rental appraisal form for further information."
+		}
+	];
 </script>

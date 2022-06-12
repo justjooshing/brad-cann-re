@@ -33,12 +33,8 @@
 		<label for="email">Email</label>
 		<Field name="email" type="email" />
 
-		<!-- 
-			https://addressfinder.com.au/features/address-autocomplete-field/
-			Add for address auto-complete
-		 -->
 		<label for="address">Complete Property Address</label>
-		<Field name="address" />
+		<Field id="address" name="address" />
 
 		<label for="property-type">Property Type</label>
 		<Select name="property-type">
