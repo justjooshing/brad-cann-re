@@ -15,6 +15,11 @@ const config = {
 				alias: {
 					$assets: path.resolve("./static/assets")
 				}
+			},
+			server: {
+				fs: {
+					allow: ["static/assets"]
+				}
 			}
 		}
 	}

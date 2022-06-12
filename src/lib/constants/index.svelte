@@ -1,12 +1,12 @@
 <script lang="ts" context="module">
 	import phone from "svelte-awesome/icons/phone";
-	import facebookF from "svelte-awesome/icons/facebook-f";
+	import facebookF from "svelte-awesome/icons/facebookF";
 	import home from "svelte-awesome/icons/home";
-	import envelope from "svelte-awesome/icons/envelope-o";
+	import envelope from "svelte-awesome/icons/envelopeO";
 	import users from "svelte-awesome/icons/users";
 	import star from "svelte-awesome/icons/star";
 	import trophy from "svelte-awesome/icons/trophy";
-	import tie from "svelte-awesome/icons/black-tie";
+	import tie from "svelte-awesome/icons/blackTie";
 	import dollar from "svelte-awesome/icons/dollar";
 	import results from "svelte-awesome/icons/signal";
 	import link from "svelte-awesome/icons/link";
@@ -217,9 +217,6 @@
 				"Tailored management in line with individual property investment strategies",
 				"Comprehensive market analyses"
 			]
-		},
-		{
-			text: "If you are interested in seeking professional property management for your asset, fill out our rental appraisal form for further information."
 		}
 	];
 </script>
