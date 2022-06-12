@@ -20,6 +20,7 @@
 		place-items: center;
 
 		.content {
+			width: 100%;
 			display: flex;
 			flex-direction: column;
 			max-width: 1200px;
