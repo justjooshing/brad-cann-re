@@ -1,8 +1,6 @@
 <script lang="ts">
-	interface paragraphObjectShape {
-		text: string;
-		points?: string[];
-	}
+	import type { paragraphObjectShape } from "$lib/types/types";
+
 	export let obj: paragraphObjectShape[];
 </script>
 
@@ -20,7 +18,7 @@
 {/each}
 
 <style lang="scss">
-	@import "../../global/index.scss";
+	@import "../global/index.scss";
 
 	p,
 	ul {

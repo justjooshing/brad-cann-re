@@ -1,18 +1,18 @@
 <script lang="ts">
 	import { slide } from "svelte/transition";
 	import { cubicInOut } from "svelte/easing";
-	import BackgroundPier from "./BackgroundPier.svelte";
-	import Button from "./Button.svelte";
-	import ContentWrap from "./ContentWrap.svelte";
-	import Htag from "./Htag.svelte";
+	import BackgroundPier from "$lib/components/BackgroundPier.svelte";
+	import Button from "$lib/components/Button.svelte";
+	import ContentWrap from "$lib/components/ContentWrap.svelte";
+	import Htag from "$lib/components/Htag.svelte";
 	import Modal, { openModal } from "$lib/components/Modal.svelte";
-	import EnquiryForm from "./EnquiryForm.svelte";
+	import EnquiryForm from "$lib/components/EnquiryForm.svelte";
 	import {
 		rentalEnquiryCopy,
 		salesEnquiryCopy,
 		managementEnquiryCopy
 	} from "$lib/constants/index.svelte";
-	import FormatParagraph from "./Utils/FormatParagraph.svelte";
+	import FormatParagraph from "$lib/utils/FormatParagraph.svelte";
 
 	export let altBg = false;
 
