@@ -12,6 +12,7 @@
 		salesEnquiryCopy,
 		managementEnquiryCopy
 	} from "$lib/constants/index.svelte";
+	import FormatParagraph from "./Utils/FormatParagraph.svelte";
 
 	export let altBg = false;
 
@@ -85,18 +86,7 @@
 	{#if sectionOpen}
 		<div transition:slide={{ duration: 1000, easing: cubicInOut }}>
 			<div class="appraisals">
-				{#each sectionOpenData.copy as { text, points }}
-					<p>{text}</p>
-					{#if points}
-						<ul>
-							{#each points as point}
-								<li>
-									{point}
-								</li>
-							{/each}
-						</ul>
-					{/if}
-				{/each}
+				<FormatParagraph obj={sectionOpenData.copy} />
 			</div>
 			<Button onclick={sectionOpenData.modalButton}>Request Appraisal</Button>
 		</div>
@@ -124,14 +114,5 @@
 
 	.appraisals {
 		padding-bottom: 2em;
-		p,
-		ul {
-			font-size: $text-standard;
-			line-height: $line-height-standard;
-			color: $text-primary;
-		}
-		p {
-			margin-bottom: 0%;
-		}
 	}
 </style>
