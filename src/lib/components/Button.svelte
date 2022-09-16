@@ -3,7 +3,7 @@
 	export let onclick: (val?: unknown) => void = undefined;
 	export let lrg = false;
 	export let sml = false;
-	export let type = "button";
+	export let type: "button" | "submit" = "button";
 </script>
 
 <div class="wrapper">
