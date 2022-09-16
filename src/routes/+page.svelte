@@ -5,7 +5,7 @@
 	import HelpingYou from "$lib/components/HelpingYou.svelte";
 	import LatestArticles from "$lib/components/LatestArticles.svelte";
 	import Services from "$lib/components/Services.svelte";
-	import Testimonials from "$lib/components/Testimonials.svelte";
+	import Testimonials from "$lib/components/Testimonials/Testimonials.svelte";
 	import WhyBrad from "$lib/components/WhyBrad.svelte";
 	import { title } from "$lib/store/stores.svelte";
 
