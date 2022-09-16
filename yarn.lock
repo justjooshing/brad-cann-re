@@ -1751,10 +1751,10 @@ svelte-hmr@^0.14.12:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.14.12.tgz#a127aec02f1896500b10148b2d4d21ddde39973f"
   integrity sha512-4QSW/VvXuqVcFZ+RhxiR8/newmwOCTlbYIezvkeN6302YFRE8cXy0naamHcjz8Y9Ce3ITTZtrHrIL0AGfyo61w==
 
-svelte-popperjs@^1.2.8:
-  version "1.2.10"
-  resolved "https://registry.yarnpkg.com/svelte-popperjs/-/svelte-popperjs-1.2.10.tgz#d78d694bde0508c61d52415d2a02db6024bb5952"
-  integrity sha512-3jetqQh8q+n2497M397IN2UaiOhCY/sLpH01FSaH+XGi649QDmVWJPNxS/PxSGadoHb+teY/tMAh2YhzT7+vVw==
+svelte-popperjs@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/svelte-popperjs/-/svelte-popperjs-1.3.2.tgz#3a4ca11dcaa64760313ae32212a5ad14f8b91484"
+  integrity sha512-fwrErlkvngL876WXRnL3OLlfk/n9YkZwwLxuKRpZOYCJLt1zrwhoKTXS+/sRgDveD/zd6GQ35hV89EOip+NBGA==
 
 svelte-portal@^2.2.0:
   version "2.2.0"
