@@ -31,7 +31,7 @@
 </ContentWrap>
 
 <style lang="scss">
-	@import "../lib/global/index.scss";
+	@import "../../lib/global/index.scss";
 
 	.contact-us {
 		display: flex;
