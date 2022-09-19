@@ -42,7 +42,12 @@
 			grid-template-columns: auto 1fr;
 			grid-gap: 20px;
 			width: 100%;
-			display: fle center;
+		}
+
+		> div {
+			display: flex;
+			flex-direction: column;
+			place-items: center;
 		}
 	}
 </style>

@@ -33,6 +33,6 @@
 	}
 
 	.altBg {
-		background: $bg-secondary;
+		background-color: $bg-secondary;
 	}
 </style>

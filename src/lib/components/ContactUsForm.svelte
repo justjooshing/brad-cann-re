@@ -45,15 +45,11 @@
 		display: flex;
 		place-content: center;
 		:global {
-			form {
-				display: flex;
-				flex-direction: column;
-			}
-
 			input,
 			select,
 			textarea {
 				width: 100%;
+				margin: 10px 0;
 				padding: 10px;
 				box-sizing: border-box;
 				border: 1px solid $input-border;
