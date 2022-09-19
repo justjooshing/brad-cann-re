@@ -3,32 +3,27 @@
 	import type { testimonialShape } from "$lib/types/types";
 	import FormatParagraph from "$lib/utils/FormatParagraph.svelte";
 
-	export let testimonials: testimonialShape[];
+	export let testimonial: testimonialShape;
+	const { heading, message, name, role } = testimonial;
 </script>
 
-{#each testimonials as { heading, name, message, role }}
-	{#if heading}
-		<Htag size={1} style={3} message={heading} />
-	{/if}
-	{#if message}
-		<FormatParagraph obj={message} />
-	{/if}
-	{#if name}
-		<p class="testimonial-name">{name}</p>
-	{/if}
-	{#if role}
-		<p class="testimonial-role">{role}</p>
-	{/if}
-{/each}
+{#if heading}
+	<Htag size={2} style={3} message={heading} />
+{/if}
+<FormatParagraph centerItems obj={message} />
+<p class="testimonial-name">{name}</p>
+{#if role}
+	<p class="testimonial-role">{role}</p>
+{/if}
 
 <style lang="scss">
 	@import "../../global/index.scss";
+
 	p {
 		line-height: $line-height-standard;
 		margin: 0;
 	}
 	.testimonial-name {
-		color: black;
 		font-weight: 600;
 		margin-top: 10px;
 	}

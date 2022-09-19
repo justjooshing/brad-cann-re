@@ -19,7 +19,9 @@
 <Footer />
 
 <style lang="scss">
+	@import "../lib/global/index.scss";
 	:global(body) {
+		font-family: $body;
 		padding: 0;
 		margin: 0;
 	}

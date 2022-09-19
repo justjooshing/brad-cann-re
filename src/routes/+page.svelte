@@ -12,15 +12,14 @@
 	title.clear();
 </script>
 
-<AppraisalsBanner />
-<HelpingYou altBg />
+<AppraisalsBanner altBg />
+<HelpingYou />
+<Testimonials altBg />
 <FutureIsHere />
 <Services altBg />
 <ContactBanner />
 <WhyBrad altBg />
 <LatestArticles />
-<Testimonials altBg />
 
 <style>
-	/* your styles go here */
 </style>

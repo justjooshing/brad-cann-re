@@ -227,7 +227,7 @@
 			name: "Preston Shaw - Dennis and Elysia Costelloe",
 			message: [
 				{
-					text: "Brad, We would like to send our gratitude for assisting us in purchasing our first home. We were new to this and it made things a lot easier when we had a real estate agent helping us along the way. We appreciate the advice and will be happy to deal with you in the future."
+					text: "We would like to send our gratitude for assisting us in purchasing our first home. We were new to this and it made things a lot easier when we had a real estate agent helping us along the way. We appreciate the advice and will be happy to deal with you in the future."
 				}
 			],
 			role: "Property Buyer"
@@ -260,7 +260,6 @@
 		{
 			name: "Frances Dara",
 			message: [
-				{ text: "Dear Brad," },
 				{
 					text: "I am writing to you to thank you for the service you gave us in the sale of our house. We are delighted that because of your advise we managed to sell it quickly. The service that you gave us was both courteous and efficient offering a personal touch that eased the difficulties involved in selling property."
 				},
@@ -270,14 +269,12 @@
 		{
 			name: "R Walser & S Rowe-Walser",
 			message: [
-				{ text: "Dear Brad," },
 				{
 					text: "We are very grateful you have succeeded to sell our home where another company failed. We appreciated your dedication to your job and your professionalism. On more than one occasion you went out of your way (and out of working hours to assist us to sell our property). You maintained your professionalism whilst being friendly towards clients. It was great how you found out as much as possible about our property and the improvement we had made and relayed these onto clients which, we believe, assisted in selling our property."
 				},
 				{
 					text: "We would have no hesitation in recommending you to others wishing to sell their property or look for a new property."
-				},
-				{ text: "Yours sincerely," }
+				}
 			]
 		},
 		{
@@ -307,7 +304,6 @@
 		{
 			name: "Anthony & Sharon Cafarella",
 			message: [
-				{ text: "Dear Brad," },
 				{
 					text: "We wish to convey our gratitude to yourself and your staff in relation to the sale of our property at the above address. Not only did you manage to achieve a truly excellent sale price, which met with the upper end of our expectations, but did so in the outstanding time of just 10 days!"
 				},
@@ -320,7 +316,6 @@
 		{
 			name: "Peter Minotti",
 			message: [
-				{ text: "Dear Brad," },
 				{
 					text: "This letter serves to confirm our telephone discussions of yesterday, expressing our gratitude at the excellent service received by your office in the handling our property."
 				},
@@ -336,7 +331,6 @@
 		{
 			name: "Bev Wilson",
 			message: [
-				{ text: "Dear Brad," },
 				{
 					text: "With regards to the sale of my property in Patterson lakes, I would like to thank you for your professionalism in the appraisal of the property in the beginning, then the sale of the property."
 				},
