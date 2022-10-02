@@ -33,15 +33,7 @@
 		"Sunday"
 	];
 
-	const pages = [
-		"Sellers",
-		"Sales",
-		"Buyers",
-		"Property Management",
-		"About Us",
-		"Contact Us",
-		"Privacy Policy"
-	];
+	const pages = ["Sellers", "Sales", "Buyers", "About Us", "Contact Us", "Privacy Policy"];
 
 	const headerPages = ["about", "contact"];
 

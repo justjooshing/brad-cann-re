@@ -6,7 +6,6 @@
 
 	import imgSellers from "$assets/sellers.webp";
 	import imgBuyers from "$assets/buyers.webp";
-	import imgPropMan from "$assets/property_management.webp";
 	import { siteLinksObj } from "$lib/constants/index.svelte";
 
 	export let altBg = false;
@@ -27,14 +26,6 @@
 			ctaLink: siteLinksObj.Buyers,
 			src: imgBuyers,
 			alt: ""
-		},
-		property_management: {
-			heading: "Property Management",
-			text: "Brad Cann and Partners goal is to create the best property management experience for investors and tenants.",
-			buttonText: "Learn more",
-			ctaLink: siteLinksObj["Property Management"],
-			src: imgPropMan,
-			alt: ""
 		}
 	};
 
@@ -46,7 +37,7 @@
 		<Htag size={2} style={2} message="What we can do for you" centered />
 		<UnderlineBar />
 		<p>
-			We are a local family business, offering an ethical and client focused approach to realestate
+			We are a local family business, offering an ethical and client focused approach to real estate
 		</p>
 	</div>
 	<div class="services">
@@ -70,7 +61,7 @@
 		display: grid;
 		grid-gap: 20px;
 		@include medium {
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 </style>
