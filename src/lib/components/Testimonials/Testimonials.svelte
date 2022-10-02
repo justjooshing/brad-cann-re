@@ -15,9 +15,7 @@
 	const smallTestimonials = testimonialsCopy.slice(2);
 
 	$: displayTestimonials = false;
-	$: seeMoreText = displayTestimonials
-		? "See fewer testimonials"
-		: "Click here for more client testimonials";
+	$: testimonialsState = displayTestimonials ? "fewer" : "more";
 
 	const handleClick = () => {
 		displayTestimonials = !displayTestimonials;
@@ -47,7 +45,7 @@
 		</div>
 	{/if}
 
-	<Button onclick={handleClick}>{seeMoreText}</Button>
+	<Button onclick={handleClick}>{`See ${testimonialsState} testimonials`}</Button>
 </ContentWrap>
 
 <style lang="scss">

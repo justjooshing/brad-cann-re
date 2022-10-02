@@ -62,11 +62,8 @@
 			width: auto;
 		}
 
-		p,
-		span {
-			color: $text-primary;
-		}
 		p {
+			color: $text-primary;
 			line-height: $line-height-standard;
 		}
 

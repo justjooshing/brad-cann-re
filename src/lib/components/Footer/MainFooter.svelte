@@ -23,12 +23,12 @@
 	<!-- Hours of Operation -->
 	<div class="hours">
 		<h3>Hours of operation</h3>
-		{#each openDays as day}
-			<div class="wrapper">
+		<div class="wrapper">
+			{#each openDays as day}
 				<span>{day}</span>
 				<span>{openHours}</span>
-			</div>
-		{/each}
+			{/each}
+		</div>
 	</div>
 
 	<!-- Site links -->
@@ -73,7 +73,8 @@
 		.hours {
 			.wrapper {
 				display: grid;
-				grid-template-columns: 85px auto;
+				grid-gap: 10px;
+				grid-template-columns: auto 1fr;
 				padding: 2px 0;
 			}
 		}

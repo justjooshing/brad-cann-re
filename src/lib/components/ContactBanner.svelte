@@ -55,7 +55,6 @@
 				span {
 					font-size: $text-standard;
 					margin-left: 15px;
-					color: $text-primary;
 					font-weight: bold;
 				}
 			}
