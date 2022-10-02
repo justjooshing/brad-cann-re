@@ -4,7 +4,7 @@
 		contactLinks as links,
 		openDays,
 		openHours,
-		siteLinks
+		footerLinks
 	} from "$lib/constants/index.svelte";
 	import { capitaliseFirstLetter } from "$lib/helpers";
 
@@ -35,7 +35,7 @@
 	<div class="site-links">
 		<h3>Site Links</h3>
 		<div class="links">
-			{#each siteLinks as { href, text }}
+			{#each footerLinks as { href, text }}
 				<a {href}>{text}</a>
 			{/each}
 		</div>

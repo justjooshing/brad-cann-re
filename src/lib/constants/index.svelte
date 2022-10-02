@@ -35,6 +35,7 @@
 
 	const pages = [
 		"Sellers",
+		"Sales",
 		"Buyers",
 		"Property Management",
 		"About Us",
@@ -44,28 +45,23 @@
 
 	const headerPages = ["about", "contact"];
 
-	export const siteLinks = pages.map((page) => ({
-		href: `/${page.split(" ")[0].toLowerCase()}`,
-		text: page
-	}));
+	const mapPages = (pageList: string[]) =>
+		pageList.map((page) => ({
+			// Take first word as page url
+			href: `/${page.split(" ")[0].toLowerCase()}`,
+			text: page
+		}));
 
-	interface siteLinksObject {
-		[key: string]: string;
-	}
+	export const footerLinks = mapPages(pages).filter(({ text }) => text !== "Sales");
+	export const headerLinks = mapPages(headerPages);
 
-	export const siteLinksObj = siteLinks.reduce(
+	export const siteLinksObj: { [key: string]: string } = mapPages(pages).reduce(
 		(links, link) => ({
 			...links,
 			[link.text]: link.href
 		}),
-		{} as siteLinksObject
+		{}
 	);
-
-	export const headerLinks = headerPages.map((page) => ({
-		href: `/${page}`,
-		text: page.toUpperCase()
-	}));
-
 	export type iconTypes =
 		| "phone"
 		| "facebook"
