@@ -53,7 +53,10 @@
 		}));
 
 	export const footerLinks = mapPages(pages).filter(({ text }) => text !== "Sales");
-	export const headerLinks = mapPages(headerPages);
+	export const headerLinks = mapPages(headerPages).map(({ href, text }) => ({
+		href,
+		text: text.toUpperCase()
+	}));
 
 	export const siteLinksObj: { [key: string]: string } = mapPages(pages).reduce(
 		(links, link) => ({
