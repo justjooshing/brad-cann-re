@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let href: string = undefined;
+	export let style: "primary" | "secondary" = "primary";
 	export let onclick: (val?: unknown) => void = undefined;
 	export let lrg = false;
 	export let sml = false;
@@ -8,9 +9,10 @@
 
 <div class="wrapper">
 	{#if href}
-		<a class="button" class:sml class:lrg {href}><slot /></a>
+		<a class={`button ${style}`} class:sml class:lrg {href}><slot /></a>
 	{:else}
-		<button class="button" class:sml class:lrg {type} on:click={onclick}><slot /></button>
+		<button class={`button ${style}`} class:sml class:lrg {type} on:click={onclick}><slot /></button
+		>
 	{/if}
 </div>
 
@@ -26,25 +28,33 @@
 		}
 	}
 	.button {
+		all: unset;
+		cursor: pointer;
 		font-size: $text-small;
 		padding: 15px 15px;
 		border-radius: 3px;
-		border: none;
-		text-shadow: none;
-		text-align: center;
-		text-decoration: none;
-		background-color: $button;
-		color: $button-text;
-		font-weight: bold;
 		margin: 5px;
-
+		font-weight: bold;
 		@include fade(background-color);
-		&:active,
-		&:visited {
+	}
+	.primary {
+		color: $button-text;
+		background-color: $button;
+
+		&:active {
 			color: $button-text;
 		}
 		&:hover {
 			background-color: $button-hover;
+		}
+	}
+
+	.secondary {
+		background-color: $button-secondary;
+		color: white;
+
+		&:hover {
+			background-color: $button-secondary-hover;
 		}
 	}
 	.lrg {
