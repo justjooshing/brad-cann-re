@@ -23,57 +23,53 @@
 	<!-- opens appraisal modal/drawer? -->
 	<Button>Get your property appraised</Button>
 
-	<section>
-		<div class="image-wrap">
-			<img class="image" src={salesConsultation} alt="" />
-			<div>
-				<Htag centered size={2} style={3} message="No convoluted, salesy, over-the-top nonsense" />
-				<UnderlineBar />
-				<p>
-					Brad Cann and Partners offers valuable guidance and assistance for property owners
-					considering selling their assets. With a strong focus on delivering the highest return on
-					investment and a seamless sales experience, our dedicated real estate agents deliver a
-					tailored approach for every property.
-				</p>
-			</div>
+	<section class="image-wrap set-a">
+		<img class="image" src={salesConsultation} alt="" />
+		<div class="text">
+			<Htag centered size={2} style={3} message="No convoluted, salesy, over-the-top nonsense" />
+			<UnderlineBar />
+			<p>
+				Brad Cann and Partners offers valuable guidance and assistance for property owners
+				considering selling their assets. With a strong focus on delivering the highest return on
+				investment and a seamless sales experience, our dedicated real estate agents deliver a
+				tailored approach for every property.
+			</p>
 		</div>
-		<Button href={contactLinks.phone}>
-			<div class="button">
-				<Icon icon="phone" alt />
-				<span>Call us now</span>
-			</div>
-		</Button>
-	</section>
-
-	<section>
-		<div class="image-wrap">
-			<div>
-				<Htag centered size={2} style={3} message="Selling with us" />
-				<UnderlineBar />
-				<div>
-					<p>
-						We help you understand the process. We give you an honest appraisal (an estimated value
-						of your property) and let you know what to expect in the current market.
-					</p>
-
-					<p class="success-list">
-						Our proven method for achieving the best sales results includes several steps:
-					</p>
-					<ul class="success-methods">
-						{#each successSteps as step}
-							<li>
-								<span class="tick">
-									<Tick />
-								</span>
-								{step}
-							</li>
-						{/each}
-					</ul>
+		<div class="button-wrapper">
+			<Button href={contactLinks.phone}>
+				<div class="button">
+					<Icon icon="phone" alt />
+					<span>Call us now</span>
 				</div>
-			</div>
-			<img class="image" src={provenMethod} alt="text" />
+			</Button>
 		</div>
-		<Button href={siteLinksObj.Sales}>Learn more</Button>
+	</section>
+	<section class="image-wrap set-b">
+		<div class="text">
+			<Htag centered size={2} style={3} message="Selling with us" />
+			<UnderlineBar />
+			<p>
+				We help you understand the process. We give you an honest appraisal (an estimated value of
+				your property) and let you know what to expect in the current market.
+			</p>
+			<p class="success-list">
+				Our proven method for achieving the best sales results includes several steps:
+			</p>
+			<ul class="success-methods">
+				{#each successSteps as step}
+					<li>
+						<span class="tick">
+							<Tick />
+						</span>
+						{step}
+					</li>
+				{/each}
+			</ul>
+		</div>
+		<div class="button-wrapper">
+			<Button href={siteLinksObj.Sales}>Learn more</Button>
+		</div>
+		<img class="image" src={provenMethod} alt="text" />
 	</section>
 
 	<section>
@@ -108,20 +104,48 @@
 	}
 
 	.image-wrap {
-		display: flex;
-		place-items: flex-start;
-		> div {
+		display: grid;
+		grid-template-areas:
+			"a"
+			"b"
+			"c";
+
+		.text {
+			grid-area: b;
 			display: flex;
 			flex-direction: column;
-			place-items: flex-start;
+			@include large {
+				place-items: flex-start;
+			}
 		}
 		.image {
+			grid-area: a;
 			height: auto;
-			max-width: 20vw;
+			max-width: 80vw;
 			border-radius: 20px;
 			margin: 15px;
+			@include large {
+				max-width: 20vw;
+			}
+		}
+		.button-wrapper {
+			grid-area: c;
 		}
 	}
+
+	.set-a {
+		@include large {
+			grid-template-areas:
+				"a b"
+				"c c";
+		}
+	}
+	.set-b {
+		@include large {
+			grid-template-areas: "b a" "c c";
+		}
+	}
+
 	.button {
 		display: flex;
 		span {
