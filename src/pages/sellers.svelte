@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Drawer from "svelte-drawer-component";
 
 	import Button from "$lib/components/Button.svelte";
@@ -6,15 +6,27 @@
 	import Htag from "$lib/components/Htag.svelte";
 	import Icon from "$lib/components/Icon/Icon.svelte";
 	import UnderlineBar from "$lib/components/UnderlineBar.svelte";
-	import { contactLinks, siteLinksObj } from "$lib/constants/index.svelte";
+	import { contactLinks, salesEnquiryCopy, siteLinksObj } from "$lib/constants/index.svelte";
 	import salesConsultation from "$assets/sellers_consultation.webp";
 	import provenMethod from "$assets/sellers_proven_method.webp";
 	import Tick from "../assets/tick.svelte";
+	import FormatParagraph from "$lib/utils/FormatParagraph.svelte";
+	import Modal, { openModal } from "$lib/components/Modal.svelte";
+	import EnquiryForm from "$lib/components/EnquiryForm.svelte";
 
-	$: drawerOpen = false;
+	let drawerOpen: "successSteps" | "appraisals" | "" = "";
 
-	const toggleDrawer = () => {
-		drawerOpen = !drawerOpen;
+	const toggleDrawer = (name: "successSteps" | "appraisals") => {
+		drawerOpen = name;
+	};
+
+	const closeDrawer = () => {
+		drawerOpen = "";
+	};
+
+	const handleOpenModal = () => {
+		closeDrawer();
+		openModal("sales-appraisals");
 	};
 
 	const successSteps = [
@@ -87,7 +99,7 @@
 		</div>
 		<div class="button-wrapper">
 			<Button href={siteLinksObj["Contact Us"]}>Speak with an expert</Button>
-			<Button onclick={toggleDrawer} style="secondary">Learn more</Button>
+			<Button onclick={() => toggleDrawer("successSteps")} style="secondary">Learn more</Button>
 		</div>
 		<img class="image" src={provenMethod} alt="text" />
 	</section>
@@ -100,22 +112,37 @@
 			As an independently owned agency, our size and depth of experience empower us to deliver a
 			consistently exceptional service and better results.
 		</p>
-		<!-- open appraisals drawer? -->
-		<Button>Get your property appraised</Button>
+		<Button onclick={() => toggleDrawer("appraisals")}>Get your property appraised</Button>
 	</section>
-
-	<Drawer placement="bottom" open={drawerOpen} on:clickAway={toggleDrawer}>
-		<ContentWrap>
-			{#each successSteps as { title, copy }}
-				<Htag size={4} style={4} message={title} />
-				<p>{copy}</p>
-			{/each}
-			<span class="close-drawer">
-				<Button onclick={toggleDrawer}>Close</Button>
-			</span>
-		</ContentWrap>
-	</Drawer>
 </ContentWrap>
+
+<Drawer placement="bottom" open={drawerOpen === "successSteps"} on:clickAway={closeDrawer}>
+	<ContentWrap>
+		{#each successSteps as { title, copy }}
+			<Htag size={4} style={4} message={title} />
+			<p>{copy}</p>
+		{/each}
+		<span class="close-drawer">
+			<Button onclick={closeDrawer}>Close</Button>
+		</span>
+	</ContentWrap>
+</Drawer>
+
+<Drawer placement="bottom" open={drawerOpen === "appraisals"} on:clickAway={closeDrawer}>
+	<ContentWrap>
+		<div class="appraisals">
+			<FormatParagraph obj={salesEnquiryCopy} />
+		</div>
+		<span class="close-drawer row">
+			<Button onclick={handleOpenModal}>Request Appraisal</Button>
+			<Button onclick={closeDrawer}>Close</Button>
+		</span>
+	</ContentWrap>
+</Drawer>
+
+<Modal name={`sales-appraisals`}>
+	<EnquiryForm formName={"sales-appraisals"} />
+</Modal>
 
 <style lang="scss">
 	@import "../lib//global";
@@ -126,6 +153,7 @@
 			"b"
 			"c"
 			"a";
+		place-items: center;
 
 		.text {
 			grid-area: b;
@@ -186,7 +214,17 @@
 		}
 	}
 
+	.appraisals {
+		text-align: left;
+	}
+
 	.close-drawer {
 		place-self: flex-end;
+	}
+
+	.row {
+		padding-top: 1em;
+		display: flex;
+		flex-direction: row;
 	}
 </style>

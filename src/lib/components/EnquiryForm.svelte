@@ -3,16 +3,27 @@
 	import Button from "./Button.svelte";
 
 	export let formName: string;
+	export let formType: "standard" | "buyers" = "standard";
+
+	const extraFields = {
+		standard: {
+			address: ""
+		},
+		buyers: {
+			minPrice: "",
+			maxPrice: ""
+		}
+	}[formType];
 
 	const context = createForm({
 		initialValues: {
 			name: "",
 			email: "",
 			phone: "",
-			address: "",
 			"property-type": "",
 			comments: "",
-			"enquiry-type": formName
+			"enquiry-type": formName,
+			...extraFields
 		},
 		onSubmit: (values) => {
 			console.log(values);
@@ -33,8 +44,10 @@
 		<label for="email">Email</label>
 		<Field name="email" type="email" />
 
-		<label for="address">Complete Property Address</label>
-		<Field id="address" name="address" />
+		{#if formType === "standard"}
+			<label for="address">Complete Property Address</label>
+			<Field id="address" name="address" />
+		{/if}
 
 		<label for="property-type">Property Type</label>
 		<Select name="property-type">
@@ -42,6 +55,13 @@
 				<option>{type}</option>
 			{/each}
 		</Select>
+
+		{#if formType === "buyers"}
+			<label for="minPrice">Min price</label>
+			<Field id="minPrice" name="minPrice" />
+			<label for="maxPrice">Max price</label>
+			<Field id="maxPrice" name="maxPrice" />
+		{/if}
 
 		<label for="comments">Comments</label>
 		<Textarea name="comments" type="textarea" />
