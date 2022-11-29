@@ -2,7 +2,7 @@
 	import ContactUsForm from "$lib/components/ContactUsForm.svelte";
 	import ContentWrap from "$lib/components/ContentWrap.svelte";
 	import Htag from "$lib/components/Htag.svelte";
-	import { contact, contactLinks as links } from "$lib/constants/index.svelte";
+	import { contact, contactLinks as links, openDays, openHours } from "$lib/constants/index.svelte";
 	import { capitaliseFirstLetter } from "$lib/helpers";
 	import { title } from "$lib/store/stores.svelte";
 
@@ -22,9 +22,19 @@
 			{#each contactDetails as [key, value]}
 				<p>{capitaliseFirstLetter(key)}: <a href={links[key]}>{value}</a></p>
 			{/each}
+			<!-- Hours of Operation -->
+			<div class="hours">
+				<Htag size={3} style={4} message="Hours of operation" />
+				<div class="wrapper">
+					{#each openDays as day}
+						<span>{day}</span>
+						<span>{openHours}</span>
+					{/each}
+				</div>
+			</div>
 		</aside>
 		<div>
-			<Htag size={2} style={4} message="Quick Contact" />
+			<Htag size={3} style={4} message="Quick Contact" />
 			<ContactUsForm />
 		</div>
 	</div>
@@ -48,6 +58,14 @@
 			display: flex;
 			flex-direction: column;
 			place-items: center;
+		}
+	}
+	.hours {
+		.wrapper {
+			display: grid;
+			grid-gap: 10px;
+			grid-template-columns: auto 1fr;
+			padding: 2px 0;
 		}
 	}
 </style>

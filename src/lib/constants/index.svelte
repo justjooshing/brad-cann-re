@@ -35,7 +35,7 @@
 
 	const pages = ["Sellers", "Sales", "Buyers", "About Us", "Contact Us", "Privacy Policy"];
 
-	const headerPages = ["about", "contact"];
+	const headerPages = ["about", "contact", "buyers", "sellers"];
 
 	const mapPages = (pageList: string[]) =>
 		pageList.map((page) => ({
@@ -44,7 +44,6 @@
 			text: page
 		}));
 
-	export const footerLinks = mapPages(pages).filter(({ text }) => text !== "Sales");
 	export const headerLinks = mapPages(headerPages).map(({ href, text }) => ({
 		href,
 		text: text.toUpperCase()

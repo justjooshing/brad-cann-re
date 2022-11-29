@@ -1,5 +1,5 @@
 <script>
-	import Footer from "$lib/components/Footer/Footer.svelte";
+	import CopyrightFooter from "$lib/components/Footer/CopyrightFooter.svelte";
 	import PageHeader from "$lib/components/PageHeader.svelte";
 	import { title } from "$lib/store/stores.svelte";
 </script>
@@ -16,7 +16,7 @@
 <div class="wrapper">
 	<slot />
 </div>
-<Footer />
+<CopyrightFooter />
 
 <style lang="scss">
 	@import "../lib/global/index.scss";
