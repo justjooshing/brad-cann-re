@@ -3,7 +3,6 @@
 	import ContactBanner from "$lib/components/ContactBanner.svelte";
 	import FutureIsHere from "$lib/components/FutureIsHere.svelte";
 	import HelpingYou from "$lib/components/HelpingYou.svelte";
-	import LatestArticles from "$lib/components/LatestArticles.svelte";
 	import Services from "$lib/components/Services.svelte";
 	import Testimonials from "$lib/components/Testimonials/Testimonials.svelte";
 	import WhyBrad from "$lib/components/WhyBrad.svelte";
@@ -19,7 +18,6 @@
 <Services altBg />
 <ContactBanner />
 <WhyBrad altBg />
-<LatestArticles />
 
 <style>
 </style>
