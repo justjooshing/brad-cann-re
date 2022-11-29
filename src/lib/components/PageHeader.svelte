@@ -1,24 +1,16 @@
 <script lang="ts">
 	import logo from "$assets/logo.jpg";
 	import { headerLinks } from "$lib/constants/index.svelte";
-	import Icon from "./Icon/Icon.svelte";
 </script>
 
 <nav class="pageHeader">
 	<a href="/">
 		<img class="logo" src={logo} alt="logo" />
 	</a>
-	<div class="links">
-		<div class="nav">
-			<Icon icon="home" fade />
-			{#each headerLinks as { href, text }}
-				<a class="nav_link" {href}>{text}</a>
-			{/each}
-		</div>
-		<div class="icons">
-			<Icon icon="facebook" fade />
-			<Icon icon="phone" fade />
-		</div>
+	<div class="nav">
+		{#each headerLinks as { href, text }}
+			<a class="nav_link" {href}>{text}</a>
+		{/each}
 	</div>
 </nav>
 
@@ -42,37 +34,23 @@
 			}
 		}
 
-		.links {
+		.nav {
 			padding: 0 1em;
 			display: none;
-			flex-direction: column;
-			justify-content: space-around;
-			margin: 0.5em 0;
+			grid-gap: 20px;
+			place-items: center;
 
 			@include small {
 				display: flex;
 			}
 
-			.icons {
-				display: flex;
-				place-content: space-around;
-			}
+			&_link {
+				color: $text-secondary;
+				text-decoration: none;
+				@include fade(color);
 
-			.nav {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				grid-gap: 20px;
-				width: min-content;
-				place-items: center;
-
-				&_link {
-					color: $text-secondary;
-					text-decoration: none;
-					@include fade(color);
-
-					&:hover {
-						color: $text-secondary-hover;
-					}
+				&:hover {
+					color: $text-secondary-hover;
 				}
 			}
 		}
